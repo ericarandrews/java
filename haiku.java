@@ -2,7 +2,7 @@ public class Haiku{
   public static void main(String[] args)
   {
     //Haiku:
-    //Surf's Up! By Eureka
+    //Surf's Up! By Erica Andrews
     //Nervous excitement toward dangerous play
     //I focus on my breathe
     //This might be my last but not my first
