@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 
-public class hwk4_c {
+public class If {
 
 	public static void main(String[] args){
 
