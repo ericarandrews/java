@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class pokerhand{
+public class PokerHand{
 	public static void main(String args[]){
 		int cards = 5;
 		int [] hand = new int [cards];
