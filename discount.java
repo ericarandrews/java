@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class hwk4_h {
+public class Discount {
 
 	public static void main(String[] args){
 
