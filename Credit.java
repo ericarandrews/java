@@ -23,25 +23,30 @@ public class Credit
 
 	double new_balance;
 
-	if (credits > new_charges){
+	if (credits > new_charges)
+	{
 		new_balance = (beginning_balance - (credits - new_charges));
-		}
-	else{
+	}
+	else
+	{
 		new_balance = (beginning_balance + (new_charges - credits));
-		};
+	}
 
-	if (new_balance == 0){
-			System.out.println("No Payment Due. New balance = " + new_balance);
+	if (new_balance == 0)
+	{
+		System.out.println("No Payment Due. New balance = " + new_balance);
 	}
-	else if(new_balance < 0){
-			System.out.println("No Payment Due. New balance = " + new_balance);
+	else if(new_balance < 0)
+	{
+		System.out.println("No Payment Due. New balance = " + new_balance);
 	}
-	else if(new_balance > credit_limit){
+	else if(new_balance > credit_limit)
+	{
 		System.out.println("Credit limit exceeded. New balance = " + new_balance);
 	}
-	else if(new_balance <= credit_limit){
+	else if(new_balance <= credit_limit)
+	{
 		System.out.println("New balance = " + new_balance);
 	}
-
-	}
-	}
+    }
+}
