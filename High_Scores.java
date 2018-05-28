@@ -66,12 +66,14 @@ public class high_scores
 	{
 
 			String array_names[] =  new String[names.size()];
-			for(int x = 0; x < names.size(); x++) {
+			for(int x = 0; x < names.size(); x++) 
+			{
 				array_names[x] = names.get(x);
 			} 
 		
 			Integer array_scores[] = new Integer[scores.size()];
-			for(int y = 0; y < scores.size(); y++) {
+			for(int y = 0; y < scores.size(); y++) 
+			{
 				array_scores[y] = scores.get(y);
 			}
 	}
@@ -82,12 +84,14 @@ public class high_scores
 	{	
 			
 		String array_names[] =  new String[names.size()];
-		for(int x = 0; x < names.size(); x++) {
+		for(int x = 0; x < names.size(); x++) 
+		{
 			array_names[x] = names.get(x);		
 		} 
 
 		Integer array_scores[] = new Integer[scores.size()];
-		for(int y = 0; y < scores.size(); y++) {
+		for(int y = 0; y < scores.size(); y++) 
+		{
 			array_scores[y] = scores.get(y);
 			
 		}
