@@ -2,8 +2,10 @@ import javax.swing.JOptionPane;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class UsingBuiltIn{
-	public static void main(String args[]){	
+public class UsingBuiltIn
+{
+	public static void main(String args[])
+	{	
 		int maleButterFlies, femaleButterFlies;
 		int totalButterFlies, sexRatio, ratioVariance;
 		int genderDifference, matingPairs;
