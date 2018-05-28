@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class Average {
-	
-	public static void main(String args []){
+public class Average 
+{	
+	public static void main(String args [])
+	{
 		
 		Scanner keyboard = new Scanner(System.in);
 		int values;
@@ -28,5 +29,4 @@ public class Average {
 			System.out.println("Average: " + (int)percentage);
 		}
 	}
-	
 }
