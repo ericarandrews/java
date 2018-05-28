@@ -3,8 +3,8 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class high_scores {
-
+public class high_scores 
+{
 //Write a program that records high-score data for a fictitious game. 
 //The program will ask the user to enter five names, and five scores. 
 //It will store the data in memory, and print it back out sorted by score.
