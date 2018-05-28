@@ -1,8 +1,10 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class BlackJack{
-  public static void main(String args[]){
+public class BlackJack
+{
+  public static void main(String args[])
+  {
     Scanner keyboard = new Scanner(System.in);
     Random random = new Random();
     
