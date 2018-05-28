@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class Fat{
-
-	public static void main(String[] args){
+public class Fat
+{
+	public static void main(String[] args)
+	{
 
 		Scanner keyboard = new Scanner(System.in);
 
@@ -25,6 +26,5 @@ public class Fat{
 		else if(caloriesFromFat < (num_of_calories * (.30))){
 			System.out.println("The food is low in fat.");
 		}
-
 	}
 }
