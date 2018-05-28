@@ -1,4 +1,5 @@
-public class Haiku{
+public class Haiku
+{
   public static void main(String[] args)
   {
     //Haiku:
