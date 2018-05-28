@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class A{
-
-	public static void main(String[] args){
+public class A
+{
+	public static void main(String[] args)
+	{
 
 	int room_capacity = 0;
 	int num_of_attendees = 0;
@@ -26,6 +27,5 @@ public class A{
 		System.out.print("\nThe meeting is legally in violation of fire laws. ");
 		System.out.println("\nThe number of excess people that need to be removed = " + (num_of_attendees - room_capacity));
 	};
-
-	}
+   }
 }
