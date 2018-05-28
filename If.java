@@ -17,15 +17,17 @@ public class If
 		integer_two = keyboard.nextInt();
 
 
-		if(integer_two == integer_one) {
+		if(integer_two == integer_one) 
+		{
 			System.out.println("The numbers are equal. Integer one = Integer two.");
 		}
-		else if(integer_two % integer_one == 0){
+		else if(integer_two % integer_one == 0)
+		{
 			System.out.println("Integer one is a multiple of Integer two.");
 			}
-		else {
+		else 
+		{
 			System.out.println("Integer one is not multiple of Integer two.");
-			};
-
 		}
 	}
+}
