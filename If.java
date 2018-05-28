@@ -2,10 +2,10 @@
 import java.util.Scanner;
 
 
-public class If {
-
-	public static void main(String[] args){
-
+public class If 
+{
+	public static void main(String[] args)
+	{
 		int integer_one = 0;
 		int integer_two = 0;
 
