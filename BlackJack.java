@@ -20,7 +20,8 @@ public class BlackJack
     System.out.print("Enter yes or no to play: ");
     toPlay = keyboard.next().charAt(0);
     
-    while(toPlay == 'y'){
+    while(toPlay == 'y')
+    {
       firstCard = random.nextInt(10) + 1;
       secondCard = random.nextInt(10) + 1;
       System.out.println("\nFirst cards: " + firstCard + "," + secondCard);
@@ -29,21 +30,25 @@ public class BlackJack
       System.out.print("Do you want another card? ");
       anotherCard = keyboard.next().charAt(0);
       
-      if(anotherCard == 'n'){
+      if(anotherCard == 'n')
+      {
         System.out.println("\nTotal: " + handTotal + ". Hand Rest.");
       }
       
-      while(anotherCard == 'y'){
+      while(anotherCard == 'y')
+      {
         requestedCard = random.nextInt(10) + 1;
         System.out.println("\nCard: " + requestedCard);
         handTotal = handTotal + requestedCard;
         System.out.println("Total: " + handTotal);
         
-        if(handTotal == 21){
+        if(handTotal == 21)
+        {
           System.out.println("\nTotal: " + handTotal + ". Winner!!!");
           break;
         }
-        if(handTotal > 21){
+        if(handTotal > 21)
+        {
           System.out.println("\nTotal: " + handTotal + ". Hand value is greater than 21.");
           System.out.println("Bust.");
           break;
@@ -52,7 +57,8 @@ public class BlackJack
         System.out.print("Do you want another card? ");
         anotherCard = keyboard.next().charAt(0);
         
-        if(anotherCard == 'n'){
+        if(anotherCard == 'n')
+        {
           System.out.println("\nTotal: " + handTotal + ". Hand Rest.");
         }
       }
