@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class Credit {
-
-	public static void main(String[] args){
+public class Credit 
+{
+	public static void main(String[] args)
+	{
 
 	double beginning_balance = 0;
 	double new_charges = 0;
