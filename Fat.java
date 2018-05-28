@@ -17,13 +17,16 @@ public class Fat
 
 		double caloriesFromFat = fat_grams * 9;
 
-		if(caloriesFromFat > num_of_calories){
+		if(caloriesFromFat > num_of_calories)
+		{
 			System.out.println("Error message: calories from fat are greater than total.");
 		}
-		else if(caloriesFromFat <= num_of_calories && caloriesFromFat >= (num_of_calories * (.30))){
+		else if(caloriesFromFat <= num_of_calories && caloriesFromFat >= (num_of_calories * (.30)))
+		{
 			System.out.println("Calories entered: " + num_of_calories + "\nThe percentage of calories from fat: " + caloriesFromFat);
 		}
-		else if(caloriesFromFat < (num_of_calories * (.30))){
+		else if(caloriesFromFat < (num_of_calories * (.30)))
+		{
 			System.out.println("The food is low in fat.");
 		}
 	}
