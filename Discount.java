@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class Discount {
-
-	public static void main(String[] args){
+public class Discount 
+{
+	public static void main(String[] args)
+	{
 
 		double num_of_packages = 0;
 		double package_amnt = 50.00;
