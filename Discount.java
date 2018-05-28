@@ -21,19 +21,24 @@ public class Discount
 		double discount_3 = ((purchase_amnt) * .40);
 		double discount_4 = ((purchase_amnt) * .50);
 
-		if(num_of_packages < 10){
+		if(num_of_packages < 10)
+		{
 			System.out.println("\nDiscount: " + discount + " \nPurchase amount after discount: " + (purchase_amnt));
 		}
-		else if(num_of_packages >= 10 && num_of_packages <= 19){
+		else if(num_of_packages >= 10 && num_of_packages <= 19)
+		{
 			System.out.println("\nDiscount: " + discount_1 + " \nPurchase amount after discount: " + (purchase_amnt - discount_1));
 		}
-		else if(num_of_packages >= 20 && num_of_packages <= 49){
+		else if(num_of_packages >= 20 && num_of_packages <= 49)
+		{
 			System.out.println("\nDiscount: " + discount_2 + " \nPurchase amount after discount: " + (purchase_amnt - discount_2));
 		}
-		else if(num_of_packages >= 50 && num_of_packages <= 99){
+		else if(num_of_packages >= 50 && num_of_packages <= 99)
+		{
 			System.out.println("\nDiscount: " + discount_3 + " \nPurchase amount after discount: " + (purchase_amnt - discount_3));
 		}
-		else if(num_of_packages >= 100){
+		else if(num_of_packages >= 100)
+		{
 			System.out.println("\nDiscount: " + discount_4 + " \nPurchase amount after discount: " + (purchase_amnt - discount_4));
 		}
 	}
