@@ -3,8 +3,8 @@
 //Input range: 0 - 100
 
 import java.util.Scanner;
-public class FiveScores {
-	
+public class FiveScores 
+{
 	Scanner input = new Scanner(System.in);		
 	String [] args = {input.nextLine(), input.nextLine(), input.nextLine(), input.nextLine(), input.nextLine()};
 	
