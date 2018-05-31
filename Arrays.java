@@ -6,7 +6,7 @@ public class Arrays
 		int testing[] = new int[4];
 		int cipher[] = new int[4];
 		
-		System.out.println("\nInput a cipher of 4 integers " + "to encrypt the word 'code'.");
+		System.out.println("\nInput a cipher of 4 integers to encrypt the word 'code'.");
 		cipher(cipher);
 		code(testing, cipher);
 	}	
@@ -59,8 +59,7 @@ public class Arrays
 		}
 		if(testing[0] != cipher[index])
 		{
-			System.out.println("Integer does not match any " + 
-								"integer input for 'code' encrypted");
+			System.out.println("Integer does not match any integer input for 'code' encrypted");
 		}
 		
 		for(int i = 0; i < code.length; i++)
@@ -73,8 +72,7 @@ public class Arrays
 		}
 		if(testing[1] != cipher[index])
 		{
-			System.out.println("Integer does not match any " + 
-								"integer input for 'code' encrypted");
+			System.out.println("Integer does not match any integer input for 'code' encrypted");
 		}
 		
 		for(int i = 0; i < code.length; i++)
@@ -87,8 +85,7 @@ public class Arrays
 		}
 		if(testing[2] != cipher[index])
 		{
-			System.out.println("Integer does not match any " + 
-								"integer input for 'code' encrypted");
+			System.out.println("Integer does not match any integer input for 'code' encrypted");
 		}
 		
 		for(int i = 0; i < code.length; i++)
@@ -101,8 +98,7 @@ public class Arrays
 		}
 		if(testing[3] != cipher[index])
 		{
-			System.out.println("Integer does not match any " +
-								"integer input for 'code' encrypted");
+			System.out.println("Integer does not match any integer input for 'code' encrypted");
 		}
 	}
 	//Enter values 1,4,2, and 3 and 1,4,2 and 3; Output should be 'c','o','d' and 'e';
