@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Integers
+public class If
 {
 	public static void main(String args[])
 	{
