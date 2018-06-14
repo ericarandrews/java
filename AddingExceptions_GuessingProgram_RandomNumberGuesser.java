@@ -56,3 +56,4 @@ public class AddingExceptions_GuessingProgram_RandomNumberGuesser
 		return response == 'y';
 	}
 }
+//getCurrentGuess value might not equal to lowerBound and upperBound values before an IllegalStateException is thrown 
