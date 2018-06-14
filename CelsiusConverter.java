@@ -17,7 +17,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 
-public class CelsiusConverter_javafx extends Application
+public class CelsiusConverter extends Application
 {
     //Create the Message Label
     Label print_label = new Label("Fahrenheit:\t\t\t32 Degrees");
