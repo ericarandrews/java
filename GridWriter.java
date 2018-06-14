@@ -1,12 +1,11 @@
-//CS111B
-public class GridWriter{
+
+public class GridWriter {
 	
 	private GridItem items[];
 	private int size;
 	private int rows;
 	private int columns;
 	private static final int INITIAL_CAPACITY = 4;
-
 	
 	/****
 	 * Create a new GridWriter. It is initially empty. It has the capacity to store four GridItems before it
@@ -28,7 +27,7 @@ public class GridWriter{
 	 ***/
 	
 	public void add(GridItem item) {
-			
+		
 		// If the item array is full, we double its capacity
 		if (size == items.length) {
 			doubleItemCapacity();
@@ -49,7 +48,7 @@ public class GridWriter{
 	
 	public void display() {
 		int count;
-	
+		
 		// Loop through all rows
 		for (int r = rows; r >= 0; r--) {
 			
@@ -60,7 +59,6 @@ public class GridWriter{
 				count = 0;
 				
 				for (int i = 0; i < size; i++) {
-					
 					if (items[i].containsPoint(c, r)) {
 						count++;
 					}
@@ -73,15 +71,17 @@ public class GridWriter{
 					System.out.print(" " + count);
 				}
 			}
+			
 			// New line at the end of each row
 			System.out.println();
-			}
 		}
+	}
 	
 	/****
 	 * This is a private helper method that doubles the array capacity of the grid writer
 	 * This allows it to accommodate a dynamic number of grid item objects
 	 **/
+	
 	private void doubleItemCapacity() {
 
 		// allocate a new array with double capacity
@@ -96,37 +96,19 @@ public class GridWriter{
 		// The old array will be garbage collected
 		items = temp;
 	}
-	
-	public int size() {
-		
-		return size;
-	}
-	
-	
-	public GridItem get(int index){
-				
-		// allocate a new array with double capacity
-		GridItem copy[] = new GridItem[items.length];
-				
-		// Copy by hand, so to speak
-		int i;
-		for (i = 0; i < items.length; i++) {
-		copy[i] = items[index];
-		}
-		
-			try
-			{
-				if(index + 1 > size)
-				{
-					throw new IndexOutOfBoundsException();
-				}
-			}
-			catch(IndexOutOfBoundsException e)
-			{
-				System.out.println("\n\nGridWriter index is out of bounds." +
-						"\nThe number of items stored in the GridWriter" + 
-						"\nmust equal the GridWriters size\n");
-			}	
-		return items[index];
-	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
