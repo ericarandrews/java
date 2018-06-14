@@ -13,24 +13,16 @@ public class MySquare_GridWriter implements GridItem {
 	}
 	
 	@Override
-	public int getX() {
-		return x;
-	}
+	public int getX() {return x;}
 	
 	@Override
-	public void setX(int value) {
-		x = value;
-	}
+	public void setX(int value) {x = value;}
 	
 	@Override
-	public int getY() {
-		return y;
-	}
+	public int getY() {return y;}
 	
 	@Override
-	public void setY(int value) {
-		y = value;
-	}
+	public void setY(int value) {y = value;}
 	
 	@Override
 	public double getArea() {
@@ -42,4 +34,5 @@ public class MySquare_GridWriter implements GridItem {
 		return	xValue <= x + side && xValue >= x &&
 				yValue <= y + side && yValue >= y;	
 	}
+
 }
