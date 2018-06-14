@@ -14,35 +14,27 @@ public class MyRectangle_GridWriter implements GridItem
 	}
 	
 	@Override
-	public int getX() {
-		return x;
-	}
+	public int getX() {return x;}
 	
 	@Override
-	public void setX(int value) {
-		x = value;
-	}
+	public void setX(int value) {x = value;}
 	
 	@Override
-	public int getY() {
-		return y;
-	}
+	public int getY() {return y;}
 	
 	@Override
-	public void setY(int value) {
-		y = value;
-	}
+	public void setY(int value) {y = value;}
 
 	@Override
 	public double getArea() {
-		return height * width;
+			return height * width;
 	}
 	
 	@Override
 	public boolean containsPoint(int xValue, int yValue) {
-		return	xValue >= x &&
-		xValue <= x + width &&
-		yValue >= y &&
-		yValue <= y + height;
+			return	xValue >= x &&
+			xValue <= x + width &&
+			yValue >= y &&
+			yValue <= y + height;
 	}
 }
