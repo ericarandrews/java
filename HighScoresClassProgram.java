@@ -138,7 +138,7 @@ public class HighScoresClassProgram
 		{
 			System.out.println(scores[0].getName()+ ": "+fourth);
 		}
-		else if(fourth== scores[1].getScore())
+		else if(fourth == scores[1].getScore())
 		{
 			System.out.println(scores[1].getName()+ ": "+fourth);
 		}
@@ -167,7 +167,7 @@ public class HighScoresClassProgram
 		{
 			System.out.println(scores[0].getName()+ ": "+fifth);
 		}
-		else if(fifth== scores[1].getScore())
+		else if(fifth == scores[1].getScore())
 		{
 			System.out.println(scores[1].getName()+ ": "+fifth);
 		}
