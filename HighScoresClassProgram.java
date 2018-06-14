@@ -39,7 +39,7 @@ public class HighScoresClassProgram
 		Scanner input = new Scanner(System.in);
 		int index;
 		
-        int first = 0;
+        	int first = 0;
 		for(index = 0; index < scores.length; index++)
 		{
 			if(scores[index].getScore() > first)
