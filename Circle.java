@@ -1,3 +1,6 @@
+// This program demonstrates, within its own class, a calculation based on user input. 
+// The calculation determines the area and whether two circles overlap. 
+// This program was completed in Java.
 
 public class Circle 
 {
