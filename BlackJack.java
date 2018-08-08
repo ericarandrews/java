@@ -1,3 +1,8 @@
+// This program was created to be a card game initially providing the user with two cards
+// and then requesting the user to input for either more cards or to cease the game.
+// The game's goal is toward achieving the highest value possible without exceeding a limitation.
+// This project was completed in Java.
+
 import java.util.Scanner;
 import java.util.Random;
 
