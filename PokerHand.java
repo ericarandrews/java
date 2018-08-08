@@ -1,3 +1,7 @@
+// This program was created to allow the user to input five numbers representing “cards” and determine 
+// which poker hand they represent. There are seven poker hands categorized by the program. Once the 
+// user inputs five values, the program states which hand type the values described. 
+// This program was completed in Java.
 
 import java.util.Scanner;
 import java.lang.reflect.Array;
