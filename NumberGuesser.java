@@ -1,4 +1,9 @@
-
+// The player is asked to guess a number and whether 
+// the number guessed by the program is the player’s guess. 
+// The player is asked to respond to the programs guess by 
+// stating whether the guess is correct, a higher value, or 
+// a lower value. This project was completed in Java.
+	
 public class NumberGuesser {
 	
 	protected int high;
