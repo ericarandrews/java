@@ -1,3 +1,7 @@
+// This program requests the user to input five names along with a score for each. 
+// The program prints the top scorers’ name and score. 
+// This program was completed in Java.
+
 import java.util.Scanner;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
