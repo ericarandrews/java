@@ -32,7 +32,7 @@ public class BlackJack
       System.out.println("\nFirst cards: " + firstCard + "," + secondCard);
       handTotal = firstCard + secondCard;
       System.out.println("Total: " + handTotal + "\n");
-      System.out.print("Do you want another card? ");
+      System.out.print("Do you want another card? Enter yes or no: ");
       anotherCard = keyboard.next().charAt(0);
       
       if(anotherCard == 'n')
