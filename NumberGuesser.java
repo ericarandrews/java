@@ -3,7 +3,8 @@
 // The player is asked to respond to the programs guess by 
 // stating whether the guess is correct, a higher value, or 
 // a lower value. This project was completed in Java.
-// GuessingProgram.java 	
+// GuessingProgram.java 
+
 public class NumberGuessingGame {
 	
 	protected int high;
