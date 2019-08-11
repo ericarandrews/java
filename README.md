@@ -20,4 +20,3 @@ SERVER SIDE TECH WEB | Completed Exercises | https://github.com/ericarandrews/se
 SQL DATABASES NOSQL | Completed Exercises | https://github.com/ericarandrews/sql_databases_nosql
 
 PROJECTS | HTML & CSS | Completed Exercises | https://ericarandrews.github.io/projects.html
-
