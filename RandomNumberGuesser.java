@@ -19,8 +19,8 @@ public class RandomNumberGuesser extends NumberGuesser {
 			randomValue = low + (generator.nextInt((high - low) + 1));
 			randomValueNeedsUpdating = false;
 		}		
-		System.out.println(high);
-		System.out.println(low);
+// 		System.out.println(high);
+// 		System.out.println(low);
 		return randomValue;
 	}
 	
