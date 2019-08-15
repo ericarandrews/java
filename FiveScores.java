@@ -1,6 +1,15 @@
 //The program compiles in the Terminal with five integers entered after filename
-//i.e. java fiveScores 70 80 80 90 70
-//Input range: 0 - 100
+
+//cd into the folder where the file is to be run
+//compile the file by using the following command: 
+	//javac filename.java
+//input the following command to test the program: 
+	//java fiveScores 70 80 80 90 70
+//output should be the following: 
+	//Your score grades: C B B A C
+	//Your final score and grade: 78.0 C
+
+//input range for 'scores' placed after the filename is 0 - 100
 
 import java.util.Scanner;
 public class FiveScores 
