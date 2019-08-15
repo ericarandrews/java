@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class String
+public class Strings
 {
 	public static void main(String args[])
 	{	
@@ -11,14 +11,14 @@ public class String
 		
 		if(string1.compareToIgnoreCase(string2) < 0)
 		{
-			System.out.println("\n" + stringCapitalize(string1) + " has " + numberconsonants(string1) + " consonants");
-			System.out.println(stringCapitalize(string2) + " has " + numberVowels(string2) + " vowels");	
+			System.out.println("\nFirst String entered: '" + stringCapitalize(string1) + "' has " + numberconsonants(string1) + " consonants");
+			System.out.println("Second String entered: '" + stringCapitalize(string2) + "' has " + numberVowels(string2) + " vowels");	
 		}
 		
 		if(string1.compareToIgnoreCase(string2) > 0)
 		{
-			System.out.println("\n" + stringCapitalize(string2) + " has " + numberVowels(string2) + " vowels");
-			System.out.println(stringCapitalize(string1) + " has " + numberconsonants(string1) + " consonants");
+			System.out.println("\nFirst String entered: '" + stringCapitalize(string2) + "' has " + numberVowels(string2) + " vowels");
+			System.out.println("Second String entered: '" +stringCapitalize(string1) + "' has " + numberconsonants(string1) + " consonants");
 		}
 	}
 	
@@ -80,6 +80,7 @@ public class String
 		three = (string.substring(0,1).toUpperCase()) + (string.substring(1).toLowerCase());
 		return three;
 	}
-	//Enter string 'first' and 'second'; Output should be 'First has 4 consonants' and 'Second has 2 vowels' 
+	//Enter string 'This is the first string' and 'This is the second string'; Output should be 
+		//'First String entered: 'This is the first string' has 15 consonants' and 
+		//'Second String entered: 'This is the second string' has 6 vowels' 
 }
-
