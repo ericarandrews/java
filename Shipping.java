@@ -1,3 +1,7 @@
+//The input for weight of package should be tested with numerical values between 1-20.
+//The input for distance should be tested with numerical values between 1-1500.
+//The values can be changed within the program to except numerical inputs outside of the ranges. 
+
 import java.util.Scanner;
 
 public class Shipping 
