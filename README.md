@@ -24,3 +24,5 @@ NETWORKS | Completed Exercises | https://github.com/ericarandrews/networks
 PROJECT | HTML & CSS | Completed Exercises | https://ericarandrews.github.io/projects.html
 
 PROJECT | JAVA | Completed Exercises | https://ericarandrews.github.io/projectjava.html
+
+PROJECT | PYTHON | Completed Exercises | https://ericarandrews.github.io/projectpython.html
