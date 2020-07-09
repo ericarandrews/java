@@ -1,0 +1,9 @@
+// Benjamin Hanna
+// Chuting Yan
+// Erica Andrews
+
+
+1. The tree from Comparison B has the fastest processing because the left subtree and the right subtree are similar in size, so fewer comparisons need to made while processing.
+2. The tree built from the ascending sorted list took less time to build and process because the descending sorted list takes a long time to create its branches ,while the ascending list only takes at most O(n) comparisons to sort the list. 
+3. For Comparison B, the tree is faster. The tree is normally O(n) and O(log n). While for the shuffled list, the normal case is O(n).
+4. The data in a binary search tree is stored according to an order. A “balanced” BST with n nodes has a maximum order of log(n) levels, and thus it takes at most log(n) comparisons to find a particular node. Nodes, therefore, can be retrieved very efficiently.
