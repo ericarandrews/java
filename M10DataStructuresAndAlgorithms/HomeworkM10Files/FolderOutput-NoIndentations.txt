@@ -1,0 +1,20 @@
+TopFolder
+Folder1
+[File1-1, File1-2]
+Folder1a
+[File1a-1, File1a-2]
+Folder1b
+[File1b-1]
+Folder2
+Folder2a
+[File2a-1, File2a-2, File2a-3]
+Folder2b
+Folder2c
+[File2c-1]
+Folder3
+[File3-1]
+Folder4
+[File4-1, File4-2]
+Folder4a
+Folder4b
+[File4b-1, File4b-2, File4b-3]
