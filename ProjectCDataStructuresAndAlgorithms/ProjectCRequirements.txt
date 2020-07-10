@@ -1,0 +1,49 @@
+Project C for Data Structures and Algorithms
+
+For Project C, the requirements are to...
+
+Project Description: 
+- You are given an interface for a type of list. The list works like this:
+* Entries can only be added to and removed from the beginning or end of the list 
+* Entries can be accessed in any position 
+* Entries begin at index 0 
+* Write a class that implements this interface. The class uses linked nodes to implement the list.
+
+Project Requirements: 
+Your class header and instance data variables will be:
+- public class LinkedHeadTailList<T> implements HeadTailListInterface<T> 
+- private Node head, tail;
+Note: Use a head and tail reference...do not add any additional instance data variables. In particular, do not add a counter variable.
+- All of the methods in the class should be O(1) or O(n).
+
+Your class must have the following implemented methods from the interface file and the additional characteristics listed below: 
+Note: You can choose whether or not to include a constructor.
+* addFront(T)
+* addBack(T)
+* removeFront()
+* removeBack()
+* contains(T) 
+* indexOf(T)
+* lastIndexOf(T) 
+* getEntry(int) 
+* display()
+Note: See the tester program for the format of the output.
+- The output should list the contents plus the value of head and tail (when the list is not empty)
+* clear() 
+* isEmpty() 
+* size() 
+- Use a head and tail reference.
+- Do not use additional instance data variables other than head and tail.
+- Ensure that methods are O(1) or O(n).
+Note: Reduce duplicated code.
+
+Extra Credit:
+Have your class implement Comparable. Update the class header and use this method header:
+
+- public class LinkedHeadTailList<T extends Comparable<? super T>> impleme nts HeadTailListInterface<T>, Comparable<LinkedHeadTailList<T>> {
+
+- public int compareTo(LinkedHeadTailList<T> otherList)
+
+This class header ensures that any type used in LinkedHeadtailList will implement Comparable. In other words, you can invoke .compareTo(...) on the data in your list.
+
+Note: Implement every method from the interface and make sure to account for special conditions such as empty lists and singleton lists.
