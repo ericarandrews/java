@@ -2,10 +2,10 @@ Project A for Data Structures and Algorithms
 
 For Project A, the requirements are to...
 
--Use Generics to create a Java class called Trio that represents a group of three items.
+- Use Generics to create a Java class called Trio that represents a group of three items.
 
 Project Description: 
--A Trio is a class representing a data structure that holds a group of three items. A Trio object has the following characteristics: 
+- A Trio is a class representing a data structure that holds a group of three items. A Trio object has the following characteristics: 
 * Trios hold three items of the same type.
 * For example, a Trio could hold three integers or it could hold three Strings or it could hold three Students, etc...A Trio could not, however, hold two integers and a String.
 * A Trio can contain duplicates.
@@ -14,8 +14,8 @@ Project Description:
 * For example, the Trio (3,4,5) is considered the same as the Trio (4,5,3) and the Trio (“hi”, “bye”, “hello”) is considered the same as the Trio (“hello”, “hi”, “bye”).
 
 Project Requirements: 
--The class header should look like this:     public class Trio<T>
--Your class must compile, use generics, and have the following:
+- The class header should look like this:     public class Trio<T>
+- Your class must compile, use generics, and have the following:
 * Instance data variables to store the three items contained in the Trio.
 * Two constructors:
 - One constructor takes in the three items as parameters.
