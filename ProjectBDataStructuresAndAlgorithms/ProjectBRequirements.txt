@@ -1,0 +1,53 @@
+Project B for Data Structures and Algorithms
+
+For Project B, the requirements are to...
+
+Project Description: 
+- You are given an interface for a type of list. The list works like this:
+* Entries can only be added to and removed from the beginning or end of the list 
+* Entries can be accessed in any position 
+* Entries begin at index 0
+Write a class that implements this interface. The class uses arrays to implement the list.
+
+Project Requirements: 
+The class header and instance data variables will be:
+- public class ArrayHeadTailList<T> implements HeadTailListInterface<T>
+- private T[] listArray; 
+- private int numberOfElements;
+
+Add the following implemented methods from the interface file and the additional characteristics listed below:
+* constructor(int) 
+- take an initial capacity in as a parameter 
+* addFront(T)
+- when the array is full, expand the array by doubling 
+* addBack(T)
+- when the array is full, expand the array by doubling
+* removeFront() 
+* removeBack() 
+* contains (T) 
+* indexOf(T) 
+* lastIndexOf(T) 
+* getEntry(int)
+- review the interface to see what happens with invalid positions 
+* display()
+- see the tester program for the format of the output; match this format!
+- the output must contain the size, the capacity, and a display of all elements in the list 
+* clear() 
+* isEmpty() 
+* size() 
+Note: Reduce duplicated code.
+
+Extra Credit
+* Write a second class to implement HeadTailListInterface.
+-  Note: You must complete the first class, above!
+* Instead of using an array, use a List object as your instance data variable. (List (https://docs.oracle.com/javase/10/docs/api/java/util/List.html) from the Java standard library- not ListInterface!). Instantiate the List object to type ArrayList.
+- Inside the methods of this class, invoke methods on the List object to accomplish the task. Note: some methods might look very simple... this does not mean they are wrong.
+* There is one difference in how this class will work compared to the other: in this extra credit class, you do not have control over the capacity, so you should not print the capacity in display and the capacity does not have to be exactly doubled in the two add methods.
+
+Note: Use the methods of the List interface/ArrayList class when possible instead of re-writing the code.
+
+The class header and instance data will be:
+- public class ListHeadTailList<T> implements HeadTailListInterface<T> List<T> list; 
+- Comment: // initialize to type ArrayList<T> in the ListHeadTailList constructor
+
+Note: Implement every method from the interface and make sure to account for special conditions such as empty lists and singleton lists.
