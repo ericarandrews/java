@@ -2,6 +2,8 @@ Project B for Data Structures and Algorithms
 
 For Project B, the requirements are to...
 
+- Write a class that implements an interface.
+
 Project Description: 
 - You are given an interface for a type of list. The list works like this:
 * Entries can only be added to and removed from the beginning or end of the list 
