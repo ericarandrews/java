@@ -1,0 +1,90 @@
+Project D for Data Structures and Algorithms
+
+For Project D, the requirements are to...
+
+- First modify a binary search tree so that it allows duplicates. Then, use this new binary search tree to organize records from a big data set.
+- This project has two parts. In Part A, you will write the binary search tree class. In Part B, you'll use the class to analyze a data set.
+
+
+Project Description: 
+
+- The class BinarySearchTreeWithDups represents a binary search tree in which duplicate entries are allowed.
+Process for Adding Duplicates:
+- A duplicate entry is placed in the entry's left subtree. The process for adding to this new binary tree is:
+1. Compare the new element to the current element.
+- If the new element is smaller, go into the left subtree. Return to step 1.
+- If the new element is larger, go into the right subtree. Return to step 1. 
+Note: This is the same process used in a regular binary search tree.
+2. If the new element is equal to the current element:
+- Go into the left subtree. Return to step 1.
+
+The BinarySearchTreeWithDups Class
+- We will assume the getEntry method returns the first match it finds and the remove method removes the first match it finds. So the only modification required is the add method.
+- The class BinarySearchTreeWithDups extends BinarySearchTree
+- Only modify the BinarySearchTreeWithDups class. Do not modify other classes.
+
+
+Project Requirements: 
+
+You will implement four methods.
+1. Write a addEntryHelperNonRecursive(T) method
+- Override the add method to call a new private addEntryHelperNonRecursive method. The helper method allows duplicate entries to be added, using the algorithm described above.
+Important Note: This method must be written without recursion in order for Part B to run. Hint: review the addEntry method in BinarySearchTree class.
+
+2. Write a countEntriesNonRecursive(T) method
+- The method counts the number of times an element appears in the tree.
+Important Note: This method must be written without recursion in order for Part B to run.
+
+3. Write a countGreaterRecursive(T) method
+- The method counts the number of elements in the tree greater than the parameter.
+- The elements in the tree implement Comparable, so you can invoke the compareTo method on the data inside of any node.
+- This method uses recursion. You can add a private helper method if necessary. It's okay if the countGreaterRecursive method isn't actually recursive, but the helper method is recursive.
+
+4. Write a countGreaterWithStack(T) method
+- The method does the same as the method above, but is not recursive. The method uses a stack in a meaningful way.
+
+Note: For the program tester file, you need to add some local variable counts and printlns in the methods in order to use this part of the driver.
+
+
+Part B Description: 
+
+The Data File
+
+The data file is a list of San Francisco police incident reports for Larceny/Theft from 2003 to 2015 (downloaded from here (https://data.sfgov.org/Public-Safety/SFPD-Incidents-from-1-January-2003/tmnfyvry) ). There are over 370,000 records in the file.
+
+In eclipse, place the data file in the same folder as the src/bin folders (one level above the .java files).
+
+Police Report Objects
+
+The PoliceReport class represents a single report. PoliceReport objects are compared for ordering and equivalence by their date. Two reports with the same date are considered logically equivalent "the same". You can see this in the equals and compareTo methods of the PoliceReport class.
+
+
+Part B Requirements:
+
+For Part B, write short answers to each of the following questions.
+
+1. Which version of the tree had the fastest processing:
+
+- The tree from Comparison A (built from sorted list, ascending)
+- The tree from Comparison B (built from shuffled list) or 
+- The tree from Comparison C (built from sorted list, descending)? 
+- Why do you think that is?
+
+2. How can you explain the difference in building and processing time between the Comparison A tree (built from sorted list, ascending) and the Comparison C tree (built from sorted list, descending)?
+
+The tree built from the sorted list ascending took less time to build and process. Why?
+
+Hint: Try drawing a small tree to see what is going on. Perhaps a tree built from 1, 1, 2, 2, 3, 4, 4, 5 and from 5, 4, 4, 3, 2, 2, 1.
+
+3. For Comparison B, which processing was faster?
+- The tree (built from the shuffled list) or the actual shuffled list?
+- How would you describe the big-o of what was going on in the processing with these two structures?
+
+4. What main characteristic of a binary search tree affects its efficiency?
+
+
+Extra Credit Requirements:
+
+- Write an O(n) countUniqueValues() method for the BinarySearchTreeWithDups class that returns a count of all unique values in the tree.
+- For example, a tree with the contents (1, 1, 1, 2, 3, 4, 4, 5, 5, 6, 7, 7, 7) would return 7 because there are 7 unique values (1, 2, 3, 4, 5, 6, 7). 
+Note: Your method must be linear.
