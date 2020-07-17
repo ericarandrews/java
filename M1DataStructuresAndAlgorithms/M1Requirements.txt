@@ -1,0 +1,54 @@
+M1: Review for Data Structures and Algorithms
+
+For M1, the requirements are to…
+
+-trace and evaluate conditionals, loops, methods, and code involving null
+-write complete methods using conditionals and loops
+-write your own parent and child classes and code that uses these classes
+
+For the following coding questions, write a parent class that describes a parcel (like a package) and a child class that describes an overnight parcel. 
+
+A parcel is described by:
+-id (which might contain numbers and letters)
+-weight (described as the number of pounds; Note: a parcel could be less than 1 pound)
+
+An overnight parcel is described by: 
+-id and weight
+-whether or not a signature is required upon delivery
+
+1
+-Write the class header and the instance data variables for the Parcel class.
+2
+-Write two constructors for the Parcel class.
+—the first constructor takes in both pieces of information (id and weight)
+—the second constructor takes in only the id and uses a default value of 1 pound for the weight
+3
+-Write getters and setters for the instance data variables of the Parcel class.
+4
+-Write a toString method. The text representation of a Parcel should include the id and weight.
+5
+-Override the equals method inherited from object. Two parcels are the same (logically equivalent) if they have the same id (ignoring capitalization).
+6
+(Note : Sometimes an id can contain characters that represent some information)
+-Write a method to determine whether a Parcel’s id meets some criteria. The criteria is described by three pieces of data, passed in as parameters: 
+…char first, char second, int numberTimesSecond…
+-In order for a Parcel’s id to meet the criteria, the id must contain the first character and then the second character must appear that number of times after the first character.
+(Note: Do not use regular expressions to solve this question! This does not fulfill the requirement…)
+7
+-Write code that would go inside the main method of a driver/tester program.
+—Create two parcel objects and Use both constructors
+—Invoke the method you wrote previous on the first object using ‘x’, ‘m’, and 2 as parameters; store the returned result in a local variable.
+—Print a text representation of the second object to the console.
+8
+-Write the following for the child overnight parcel class:
+—the child class header
+—the instance data variables
+—one constructor that takes in all three pieces of information that describe an overnight parcel
+
+Optional Question
+-Write a complete method to determine if an email is valid
+—Use a loop (Note: Do not use a regular expression! This does not fulfill the requirements)
+—For this question, an email is valid if 
+—-it contains the @ symbol with at least one character before it
+—-it contains a period
+—-there are exactly three characters after the last period
