@@ -1,0 +1,123 @@
+
+******TESTING QUESTION: PRINT AT INTERVAL
+Prints should match: 
+a c
+a c
+Prints should match: 
+a d
+a d
+Prints should match: 
+a
+a
+Prints should match: 
+c e g
+c e g
+Prints should match: 
+c f
+c f
+Prints should match: 
+a d g
+a d g
+Prints should match: 
+q
+q
+Prints should match: 
+q r s t
+q r s t
+Should print nothing (and not crash)
+
+Prints should match: 
+m
+m
+
+******TESTING QUESTION: LINKED BAG REMOVE ALL
+Before removing 1, the bag contains []
+After, the bag contains
+[]  
+[]
+Size is 0: 0
+
+Before removing 1, the bag contains [1]
+After, the bag contains
+[]  
+[]
+Size is 0: 0
+
+Before removing 1, the bag contains [1, 1, 1]
+After, the bag contains
+[]  
+[]
+Size is 0: 0
+
+Before removing 1, the bag contains [1, 5, 1, 4, 2, 1, 1]
+After, the bag contains
+[2, 4, 5] 
+[2, 4, 5]
+Size is 3: 3
+
+Before removing 1, the bag contains [1, 1, 5, 1, 4, 1, 1, 3, 1, 1]
+After, the bag contains
+[3, 4, 5] 
+[3, 4, 5]
+Size is 3: 3
+
+Before removing 5, the bag contains [3, 5, 4]
+After, the bag contains
+[3, 4] 
+[3, 4]
+Size is 2: 2
+
+Before removing 4, the bag contains [5, 4, 3, 4]
+After, the bag contains
+[3, 5] 
+[3, 5]
+Size is 2: 2
+
+Before removing 7, the bag contains [3, 5]
+After, the bag contains
+[3, 5] 
+[3, 5]
+Size is 2: 2
+
+
+******TESTING QUESTION: LLIST GET MAX
+The max in the list is 4: 4	Size of list is still 5: 5
+The max in the list is 4: 4	Size of list is still 6: 6
+The max in the list is 4: 4	Size of list is still 7: 7
+The max in the list is 5: 5	Size of list is still 8: 8
+The max in the list is 7: 7	Size of list is still 9: 9
+The max in the list is 1: 1	Size of list is still 1: 1
+Should either print null or throw an exception- but NOT a Null Pointer Exception
+null
+
+******TESTING QUESTION: LLIST ADD ALL
+The list contains[peach] 
+		 [peach]
+Size is 1: 1
+
+The list contains[peach, banana, date, grape, eggplant, jicama, grape] 
+		 [peach, banana, date, grape, eggplant, jicama, grape]
+Size is 7: 7
+
+The list contains[peach, banana, date, grape, eggplant, jicama, grape] 
+		 [peach, banana, date, grape, eggplant, jicama, grape]
+Size is 7: 7
+
+The list contains[banana, date, grape, eggplant, jicama, grape] 
+		 [banana, date, grape, eggplant, jicama, grape]
+Size is 6: 6
+
+The list contains[] 
+		 []
+Size is 0: 0
+
+******TESTING QUESTION EXTRA CREDIT: DOUBLE NODE PALINDROME
+Should print true: true
+Should print true: true
+Should print false: false
+Should print false: false
+Should print false: false
+Should print false: false
+Should print false: false
+Should print true and not crash: true
+Should print true and not crash: true
