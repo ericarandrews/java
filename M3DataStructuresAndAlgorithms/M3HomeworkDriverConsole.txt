@@ -1,0 +1,117 @@
+******TESTING QUESTION: COMPARABLE
+Before sorting:
+[Anne Teak (123), Trina Woods (234), Holly Woods (789), Trina Forest (345), Holly Wood (456), Holly McRel (567), anne teak (678)]
+Woods is greater than Teak
+Value returned = 1
+Holly is less than Trina
+Value returned = -1
+Holly is less than Trina
+Value returned = -1
+Woods is greater than Teak
+Value returned = 1
+Forest is less than Woods
+Value returned = -1
+Forest is less than Teak
+Value returned = -1
+Wood is less than Woods
+Value returned = -1
+Wood is greater than Teak
+Value returned = 1
+McRel is less than Wood
+Value returned = -1
+McRel is less than Teak
+Value returned = -1
+McRel is greater than Forest
+Value returned = 1
+teak is less than Wood
+Value returned = -1
+teak is greater than McRel
+Value returned = 1
+678 is greater than 123
+Value returned = 1
+Prints should match:
+[Trina Forest (345), Holly McRel (567), Anne Teak (123), anne teak (678), Holly Wood (456), Holly Wood (789), Trina Woods (234)]
+[Trina Forest (345), Holly McRel (567), Anne Teak (123), anne teak (678), Holly Wood (456), Holly Woods (789), Trina Woods (234)]
+
+******************************************TESTING THE COMPARETO METHOD******************************************
+These objects equal.
+Value returned = 0
+0
+
+******TESTING QUESTION: TESTING IF BAG IS A SET
+Prints should match (contents should be the same- order might be different):
+[]
+[]
+Bag is set? 	 true: true
+
+Prints should match (contents should be the same- order might be different):
+[hi]
+[hi]
+Bag is set? 	 true: true
+
+Prints should match (contents should be the same- order might be different):
+[hi, HI, hello]
+[hi, HI, hello]
+Bag is set? 	 true: true
+
+Prints should match (contents should be the same- order might be different):
+[hi, HI, hello, hi]
+[hi, HI, hello, hi]
+Bag is set? 	false: false
+
+Prints should match (contents should be the same- order might be different):
+[a, c, b, d, a]
+[a, c, b, d, a]
+Bag is set? 	false: false
+
+******TESTING QUESTION: CREATING LIST OF WORDS THAT CONTAIN CHAR
+The contents of the returned list should be: 
+[]
+[]
+
+The contents of the returned list should be (in THIS ORDER): 
+[apple, anna, canal, cat]
+[apple, anna, canal, cat]
+The original list should still contain (in THIS ORDER): 
+[apple, anna, bob, ANIMAL, canal, frog, cat]
+[apple, anna, bob, ANIMAL, canal, frog, cat]
+
+******TESTING QUESTION: FINDING LAST POSITION
+The index should indicate the target is not in the list: -1
+The index should indicate the target is not in the list: -1
+The index should be: 	3: 3
+The index should be: 	9: 9
+The index should be: 	9: 9
+
+******TESTING QUESTION: LIST COMPARISON
+Equivalent lists? should be 	true :true
+Equivalent lists? should be 	false:false
+Equivalent lists? should be 	false:false
+Equivalent lists? should be 	false:false
+Equivalent lists? should be 	true :true
+Equivalent lists? should be 	false:false
+Equivalent lists? should be 	false:false
+Equivalent lists? should be 	false:false
+Equivalent lists? should be 	false:false
+
+******TESTING EXTRA CREDIT QUESTION: MOVE THE MINIMUM TO THE FRONT
+The list should contain: 
+[]
+[]
+
+The list should contain: 
+[4]
+[4]
+
+The list should contain: 
+[2, 4, 3, 5, 7]
+[2, 4, 3, 5, 7]
+
+The list should contain: 
+[1, 2, 4, 3, 5, 7]
+[1, 2, 4, 3, 5, 7]
+
+The list should contain: 
+[0, 2, 4, 3, 5, 7]
+[0, 2, 4, 3, 5, 7]
+[0, 2, 4, 3, 5, 7]
