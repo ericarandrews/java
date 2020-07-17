@@ -1,0 +1,111 @@
+
+******TESTING ARRAY REVERSER
+Before reverse: [1, 2, 3, 4, 5]
+After reverse should be
+[5, 4, 3, 2, 1]
+[5, 4, 3, 2, 1]
+After reversing back should be
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+
+Before reverse: [1, 2, 3, 4, 5, 6]
+After reverse should be
+[6, 5, 4, 3, 2, 1]
+[6, 5, 4, 3, 2, 1]
+After reversing back should be
+[1, 2, 3, 4, 5, 6]
+[1, 2, 3, 4, 5, 6]
+
+Before reverse: [1, 2]
+After reverse should be
+[2, 1]
+[2, 1]
+
+Before reverse: [1]
+After reverse should be
+[1]
+[1]
+
+Before reverse: []
+After reverse should be
+[]
+[]
+******TESTING Q WITHOUT U
+
+All of these should be false. They do NOT contain a "q" that is not immediately followed by a "u"
+hello: 		false: false	 no q; odd length
+cats: 		false: false	 no q; even length
+a: 		false: false	 no q; single letter
+"": 		false: false	 no q; empty string
+quite: 		false: false	 q followed by u at the beginning of the word
+equal: 		false: false	 q followed by u in the middle of a word; odd length
+aqua: 		false: false	 q followed by u in the middle of a word; even length
+nonsensewordqu: false: false	 q followed by u at the end of the word
+QUOTE: 		false: false	 q followed by u in caps
+qu: 		false: false	 q followed by u and nothing else
+
+All of these should be true. They DO contain a "q" that is not immediately followed by a "u"
+qat: 		true: true	 q without u at the beginning of the word
+cinq: 		true: true	 q without u at the end of the word; even length
+drinq: 		true: true	 q without u at the end of the word; odd length
+nonsenseqword: 	true: true	 q without u in the middle of the word
+aquaq: 		true: true	 q without u in a word that also has a "qu" before it
+qaqu: 		true: true	 q without u in a word that also has a "qu" after it
+qiteu: 		true: true	 q without u right after, but with a u later on
+q: 		true: true	 q all on its own- single letter
+qq: 		true: true	 q all on its own- double letter
+uq: 		true: true	 q with a u before it
+Qtip: 		true: true	 q without a u in caps
+
+******TESTING GET FREQUENCY OF
+The bag contains[] 
+		[]
+Should be 0: 0
+
+The bag contains[1] 
+		[1]
+Should be 1: 1
+
+The bag contains[1] 
+		[1]
+Should be 0: 0
+
+The bag contains[1, 3, 4, 1, 2, 1] 
+		[1, 3, 4, 1, 2, 1]
+Should be 3: 3
+Should be 1: 1
+Should be 0: 0
+The bag still contains  [1, 3, 4, 1, 2, 1] 
+			[1, 3, 4, 1, 2, 1]
+
+******TESTING COUNT POSITIVES
+The bag contains[1, -4, -2, 5, 3, -1, 2] 
+		[1, -4, -2, 5, 3, -1, 2]
+There are 4 positives: 4
+The bag still contains  [1, -4, -2, 5, 3, -1, 2] 
+			[1, -4, -2, 5, 3, -1, 2]
+The bag contains[-3, -4, -2] 
+		[-3, -4, -2]
+There are 0 positives: 0
+The bag still contains  [-3, -4, -2] 
+			[-3, -4, -2]
+The bag contains[3, 4, 2] 
+		[3, 4, 2]
+There are 3 positives: 3
+The bag still contains  [3, 4, 2] 
+			[3, 4, 2]
+The bag contains[] 
+		[]
+There are 0 positives: 0
+The bag still contains  [] 
+			[]
+The bag contains[3] 
+		[3]
+There are 1 positives: 1
+The bag still contains  [3] 
+			[3]
+The bag contains[-3] 
+		[-3]
+There are 0 positives: 0
+The bag still contains  [-3] 
+			[-3]
