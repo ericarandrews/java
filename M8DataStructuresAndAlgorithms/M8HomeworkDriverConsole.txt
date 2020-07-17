@@ -1,0 +1,23 @@
+*********************Array Sortedness Tester
+Sortedness: Odd Length, Sorted		100% 	100%
+Sortedness: Even Length, Sorted		100% 	100%
+Sortedness: Odd Length, Unsorted	0% 	0%
+Sortedness: Even Length, Unsorted	0% 	0%
+Sortedness: Odd Length, Partial Sort	50% 	50%
+Sortedness: Even Length, Partial Sort	40% 	40%
+Sortedness: String, Odd Length		100% 	100%
+Sortedness: String, Even Length		67% 	67%
+Sortedness: Singleton			100% 	100%
+Sortedness: Empty			100% 	100%
+
+*********************Node Sortedness Tester
+Sortedness: Odd Length, Sorted		100% 	100%
+Sortedness: Even Length, Sorted		100% 	100%
+Sortedness: Odd Length, Unsorted	0% 	0%
+Sortedness: Even Length, Unsorted	0% 	0%
+Sortedness: Odd Length, Partial Sort	50% 	50%
+Sortedness: Even Length, Partial Sort	40% 	40%
+Sortedness: String, Odd Length		100% 	100%
+Sortedness: String, Even Length		67% 	67%
+Sortedness: Singleton			100% 	100%
+Sortedness: Empty			100% 	100%
