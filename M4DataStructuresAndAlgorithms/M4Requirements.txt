@@ -1,0 +1,59 @@
+M4 for Data Structures and Algorithms
+
+For M4, the requirements are to...
+
+Project Description: 
+
+- Trace the behind-the-scenes variables in the ArrayBag, ResizeableArrayBag, and AList classes 
+- Evaluate ArrayList code 
+- Implement methods to go inside the ArrayBag, ResizeableArrayBag, and AList classes
+
+Notes:
+- Write Java statements from the implementation perspective, writing code to go inside the ArrayBag.java, ResizeableArrayBag.java, or AList.java class.
+- Do not create another data structure inside the code.
+- Do not create an ArrayList inside of a method in the ArrayBag class.
+- Avoid writing code that involves nested loops when possible.
+- Your code should not crash for an empty list/bag and a singleton list/bag that contains only one element.
+
+Project Requirements: 
+
+Question 1
+- Write a complete ArrayBag removeAll(T) method:
+* Write a removeAll method for the ArrayBag class. The method removes all occurrences of a specified entry from a bag and returns the number of elements removed.
+* Write an efficient solution. To do this, try to minimize the number of times you cycle through the array. Remember that some methods in the class cycle through the array. Be careful about invoking these methods that go through the array inside a loop. This can create a nested loop, which is inefficient.
+* The method header is:
+- public int removeAll(T element)
+
+Question 2
+- Write a trimToSize method for the ResizableArrayBag class. 
+* This method should accomplish the same functionality as the trimToSize method in ArrayList (https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html#trimToSize-) .
+* The method removes empty spaces from the internal "bag" array so that there are no "null" places in the array.
+* Make sure your method will not cause problems under special cases, such as an empty bag.
+* The method header is:
+- public void trimToSize()
+
+Question 3
+- Write a complete AList removeAll(T) method:
+* Write a removeAll method for the AList class. The method removes all occurrences of a specific entry from the list and returns the number of elements removed. The rest of the list contents should be left in the same relative order.
+* Write an efficient solution. To do this, try to minimize the number of times you cycle through the array. Remember that some methods in the class cycle through the array. Be careful about invoking these methods that go through the array inside a loop. This can create a nested loop, which is inefficient.
+* The method header is:
+- public int removeAll(T element)
+
+Question 4
+- Write a complete equals method:
+* Write an equals method for the AList class to override the method inherited from Object. Two lists should be considered logically equivalent ("the same") if they contain the same elements in the same order.
+* Write an efficient solution and do not use any other data structures other than the underlying arrays in your answer.
+* The method header is:
+- @Override public boolean equals(Object obj)
+
+Optional Extra Credit 
+- Modify the AList class to implement the Comparable interface. 
+- Write the compareTo method to order lists this way:
+* First by size: a list that has fewer elements is smaller 
+* Second, if the lists are the same size:
+- Compare element-by element; the first time you find an element that doesn't match, compare the lists based on that element
+- To test your AList class, be sure to use the provided AList class. The generics, class header, and various parts of the code that have been updated so that the compareTo method can run. Specifically, that version includes these lines:
+- public class AList<T extends Comparable<? super T>> implements ListInterface<T>, Comparable<AList<T>>
+- public int compareTo(AList<T> otherList) 
+- T[] tempList = (T[]) new Comparable[initialCapacity + 1]; // in constructor 
+- T[] result = (T[]) new Comparable[numberOfEntries]; // in toArray
