@@ -1,0 +1,91 @@
+************************************TESTING ARRAYBAG REMOVE ALL
+Number removed is 0:0
+The bag contains  0:0 (in ANY order)    []
+					[]
+Number removed is 5:5
+The bag contains  5:5  (in ANY order)   [7, 7, 2, 3, 4]
+					[7, 7, 2, 3, 4]
+Number removed is 2:2
+The bag contains  3:3 (in ANY order)    [4, 3, 2]
+					[4, 3, 2]
+Number removed is 0:0
+The bag contains  3:3 (in ANY order)    [4, 3, 2]
+					[4, 3, 2]
+Number removed is 4:4
+The bag contains  0:0    		[]
+					[]
+
+
+************************************TESTING RESIZABLE ARRAYBAG TRIM TO SIZE
+The size of the bag is 		  0:0
+The length of the bag array is 	 20:20
+The size of the bag is 		100:100
+The length of the bag array is 	160:160
+The size of the bag is 		100:100
+The length of the bag array is 	100:100
+The size of the bag is 		101:101
+The length of the bag array is 	200:200
+The size of the bag is 		101:101
+The length of the bag array is 	101:101
+
+
+************************************TESTING ALIST REMOVE ALL
+
+Number removed is 0:0
+The list contains 0:0
+	[]
+	[]
+
+Number removed is 4:4
+The list contains 4:4
+	[2, 4, 3, 7]
+	[2, 4, 3, 7]
+
+Number removed is 1:1
+The list contains 3:3
+	[2, 4, 3]
+	[2, 4, 3]
+
+Number removed is 0:0
+The list contains 3:3
+	[2, 4, 3]
+	[2, 4, 3]
+
+Number removed is 4:4
+The list contains 0:0
+	[]
+	[]
+
+
+************************************TESTING ALIST EQUALS
+Result is  true: true
+Result is false: false
+Result is false: false
+Result is false: false
+Result is false: false
+
+The produce list contains 	[banana, date, grape, eggplant, carrot]
+The food list contains 		[banana, date, grape, eggplant, carrot]
+Result is  true: true
+
+The produce list contains 	[banana, squash, grape, eggplant, carrot, date]
+The food list contains 		[grape, date, banana, eggplant, carrot, squash]
+Result is false: false
+
+Result is  true: true
+
+
+************************************TESTING ALIST COMPARABLE
+Result 0:0		List A and B are empty.
+Result positive: 1	List A is bigger (more elements)
+Result negative:-1	List A is smaller (fewer elements)
+Result negative:-1	List A is smaller (fewer elements)
+Result 0:0		List A and List B are the same size and have the same elements
+Result negative:-1	List A is smaller (lists are the same size; for the first non-matching element, the a list element is smaller
+Result 0:0		List A and List B are the same size and have the same elements
+Result positive: 1	List A is bigger (lists are the same size; for the first non-matching element, the a list element is bigger
+Result negative:-1	List A is smaller (lists are the same size; for the first non-matching element, the a list element is smaller
+
+
+************************************TESTING
+[5, 4, 1, 2]
