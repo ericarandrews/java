@@ -1,0 +1,77 @@
+Testing Object a, Parcel: 
+ID: abcde
+Weight: 1.0
+Name: myname
+Street: mystreet
+City: mycity
+State: mystate
+Zip: myzip
+
+
+Testing Object b, Parcel: 
+ID: fghij
+Weight: 1.0
+Name: aname
+Street: astreet
+City: acity
+State: astate
+Zip: azip
+
+
+Testing child class, overnightParcel: 
+ID: abcde
+Weight: 1.0
+Name: myname
+Street: mystreet
+City: mycity
+State: mystate
+Zip: myzip
+
+
+Testing the toString method: 
+ID: xxx
+Weight: 1.0
+Name: name
+Street: street
+City: city
+State: state
+Zip: zip
+
+
+Testing the equals method: 
+Is object x equal to object y? false
+Is object x equal to object z? true
+
+
+******************************Testing id Criteria
+These ids meet the criteria- should print true.
+	true	exactly 2 m's after x
+
+	true	exactly 3 v's after e; also 1 extra v before x- that doesn't affect the criteria
+
+	true	exactly 2 b's after the first g; also a second g- that doesn't affect the criteria
+
+
+These ids do NOT meet the criteria- should print false.
+	false	 only 1 a after the z- the other a comes before the z
+
+	false	 3 q's after the f
+
+	false	 no k
+
+	false	 the first b is the firstChar; there are then only *2* other b's *after* that
+
+
+
+******************************Testing e-Mail Validator
+true : true for janeeyre@email.com
+true : true for markdarcy@gmail.abc
+true : true for dr.frankenstein@monster.com
+true : true for !@abc.xyz
+false : false for @abc.xyz
+false : false for abc.com
+false : false for j@com
+false : false for jm@gmail.comm
+false : false for jm@gmail.hi
+false : false for jm@gmail.z
+false : false for abcdef
