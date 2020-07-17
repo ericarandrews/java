@@ -1,0 +1,98 @@
+M3 for Data Structures and Algorithms
+
+For M3, the requirements are to...
+
+- Trace the use of bags (BagInterface) and lists (ListInterface and List) 
+- Write code to use bags and lists from the client perspective 
+- Write code to implement the Comparable interface
+
+Project Description: 
+
+- Refer to BagInterface, ListInterface, and List.
+- You should write Java statements that only have access to the methods defined in the BagInterface, ListInterface, or List interfaces.
+- Your code should run and produce an expected result for an empty bag or list.
+- Do not use the toArray() method or additional data structures such as arrays, ArrayLists, etc.
+- You can create temporary data structures of a specific type. You will then need to initialize as one of the concrete classes (e.g., BagInterface b = new ArrayBag()). 
+
+Project Requirements: 
+
+Assume you have a class called Person with instance data variables:
+- private String firstName, lastName;
+- private int id;
+
+This class will now implement the Comparable interface.
+1. Write a new class header for this class.
+2. Write a complete compareTo method using the following logic:
+- People are ordered by last name (ignoring capitalization), then by first name (ignoring capitalization), then by id.
+- In other words, if two people have the same last name, they should be ordered based on first name; if they have the same last name and first name, they should be ordered based on id.
+- Use alphabetic ordering and ignore capitalization.
+
+Question 1
+- Write a complete new class header for the Person class that implements the Comparable interface.
+Question 2
+- Write a complete compareTo method (including the method header).
+
+Question 3
+- Write a complete isSet method:
+* A set is an unordered collection of objects that does not allow duplicates.
+* Write a complete method from the client perspective that determines if a bag is also a set. 
+* A bag is also a set if it contains no duplicates.
+* The parameter bag should have the same contents before and after the method executes.
+* The method header is:
+- public static boolean isSet(BagInterface<String> wordBag)
+
+Notes:
+- You can use local objects of type BagInterface (initialized as ArrayBag).
+- Do not use another data structure, such as ArrayList or an array.
+- Do not invoke the toArray() method.
+
+Question 4
+- Write a complete createWordListContainChar method:
+* Write a complete method from the client perspective to create a new ListInterface object that contains all Strings on a wordList that contain a given character.
+* The method header is:
+- public static ListInterface<String> createWordListContainChar(ListInterface<String> wordList, char key)
+
+Notes:
+- The relative order of the names in the returned list should match the order of the names in the parameter list.
+- The wordList parameter should be unchanged when the method completes.
+- You can use local objects of type ListInterface (initialized as AList).
+- Do not use another data structure, such as ArrayList or an array.
+- Do not invoke the toArray() method.
+
+Question 5
+- Write a complete lastPosition method:
+* Write a complete method from the client perspective to find the last position of an item in a List.
+* The method header is:
+- public static int lastPosition(List<String> wordList, String targetWord)
+
+Notes:
+- If the item appears more than once, return the position of the last appearance.
+- Decide what to do if the item is not on the list.
+- The wordList parameter should be unchanged when the method completes.
+- Note that there is a lastIndexOf method in the ArrayList class. 
+- Re-write this method
+
+Question 6
+- Write a complete equivalentLists method:
+* Write a complete method from the client perspective to determine if a ListInterface and List of numbers have equivalent contents-meaning the same numbers in the same order.
+* The method header is:
+- public static boolean equivalentLists(ListInterface<Integer> numberListInterface, List<Integer> numberList)
+
+Notes:
+- Neither parameter list should be changed when the method completes.
+- Do not assume anything about the size of the lists.
+- Do not convert either list to an array.
+- Do not use another data structure, such as ArrayList, AList, or an array.
+
+
+Optional Extra Credit 
+- Write a complete prioritizeMinimumValue method:
+* Find the minimum value in a List and move that value to the front of the list.
+* The method header is:
+- public static void prioritizeMinimumValue(List<Integer> numberList)
+
+Notes:
+- Your code should not crash with empty lists, one-element lists, or longer lists.
+- If there is more than one copy of the minimum, you can move any of those copies to the front.
+- You are not swapping values, but performing a shift by moving the minimum value to the front of the list.
+- Do not use another data structure, such as ArrayList or an array.
