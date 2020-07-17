@@ -1,0 +1,52 @@
+***TESTING TOSTRING METHOD***
+Should print a text representation of the Trio that contains(3, 4, 5):
+3	4	5
+Should print a text representation of the Trio that contains (hello, goodbye, farewell):
+hello	goodbye	farewell
+
+***TESTING GETTERS AND SETTERS METHOD***
+Item 1 should be 3: 3
+Item 2 should be 4: 4
+Item 3 should be 5: 5
+Item 1 should be 6: 6
+Item 2 should be 7: 7
+Item 3 should be 8: 8
+
+***TESTING HASDUPLICATES METHOD***
+Trio (3, 4, 5) contains duplicates? false: false
+Trio (3, 3, 5) contains duplicates?  true: true
+Trio (3, 4, 4) contains duplicates?  true: true
+Trio (3, 4, 3) contains duplicates?  true: true
+Trio (4, 4, 4) contains duplicates?  true: true
+
+***TESTING COUNT METHOD***
+Trio (3, 4, 5) contains how many 1s? 0: 0
+Trio (1, 4, 5) contains how many 1s? 1: 1
+Trio (3, 1, 5) contains how many 1s? 1: 1
+Trio (3, 4, 1) contains how many 1s? 1: 1
+Trio (1, 1, 2) contains how many 1s? 2: 2
+Trio (1, 2, 1) contains how many 1s? 2: 2
+Trio (2, 1, 1) contains how many 1s? 2: 2
+Trio (1, 1, 1) contains how many 1s? 3: 3
+
+***TESTING COUNT METHOD WITH STRINGS***
+Trio (hello, goodbye, farewell) contains how many hello? 1: 1
+Trio (hello, goodbye, farewell) contains how many HELLO? 0: 0
+
+***TESTING RESET METHOD***
+Should print a text representation of the Trio that contains 43, 43, 43:
+43	43	43
+Trio (43, 43, 43) contains how many 43s?    3: 3
+Trio (43, 43, 43) contains duplicates?   true: true
+
+***TESTING EQUALS METHOD***
+Trios (apple, ball, cat) and (apple, ball, cat) the same? true : true
+Trios (a, b, c) and (b, c, a) the same? true : true
+Trios (5, 6, 8) and (8, 5, 6) the same? true : true
+Trios (1, 2, 1) and (1, 1, 2) the same? true : true
+Trios (2, 1, 1) and (1, 1, 2) the same? true : true
+
+Trios (5, 5, 8) and (8, 5, 6) the same? false: false
+Trios (1, 1, 2) and (1, 2, 2) the same? false: false
+Trios (2, 1, 2) and (1, 2, 1) the same? false: false
+Trios (5, 6, 8) and (hello, goodbye, farewell) the same? false: false
