@@ -1,0 +1,90 @@
+*****TESTING TRADITIONAL BINARY SEARCH TREE FUNCTIONALITY STILL WORKING
+Inorder should print 
+A B C D E F G H
+A B C D E F G H 
+
+Preorder should print 
+E B A C D H F G
+E B A C D H F G 
+
+Postorder should print 
+A D C B G F H E
+A D C B G F H E 
+
+
+*****TESTING DUPLICATE FUNCTIONALITY
+Inorder should print 
+1 3 4 5 5 6 6 6 6 7 8 8 9 10 11
+1 3 4 5 5 6 6 6 6 7 8 8 9 10 11 
+
+Preorder should print 
+6 3 1 6 5 4 5 6 6 10 8 7 8 9 11
+6 3 1 6 5 4 5 6 6 10 8 7 8 9 11 
+
+Postorder should print 
+1 5 4 6 6 5 6 3 8 7 9 8 11 10 6
+1 5 4 6 6 5 6 3 8 7 9 8 11 10 6 
+
+
+The left child of the root 6 is  3: 3
+The left child of the 3 node is  1: 1
+The right child of the 3 node is 6: 6
+
+
+*****TESTING COUNT ENTRIES
+Number of 1s 	1:  1
+Number of 4s 	1:  1
+Number of 5s 	2:  2
+Number of 6s 	4:  4
+Number of 8s 	2:  2
+Number of 11s 	1:  1
+Number of As 	1:  1
+Number of Fs 	1:  1
+Number of 0s 	0:  0
+Number of 12s 	0:  0
+Number of Qs 	0:  0
+
+*****TESTING COUNT GREATER THAN WITH STACK
+Numbers greater than 0 		15: 15
+Numbers greater than 1 		14: 14
+Numbers greater than 5 		10: 10
+Numbers greater than 6 		6: 6
+Numbers greater than 8 		3: 3
+Numbers greater than 10 	1: 1
+Numbers greater than 11 	0: 0
+Numbers greater than 12 	0: 0
+
+*****TESTING COUNT GREATER RECURSIVE
+Numbers greater than 0 		15: 15
+Numbers greater than 1 		14: 14
+Numbers greater than 5 		10: 10
+Numbers greater than 6 		6: 6
+Numbers greater than 8 		3: 3
+Numbers greater than 10 	1: 1
+Numbers greater than 11 	0: 0
+Numbers greater than 12 	0: 0
+
+*****TESTING EXTRA CREDIT COUNT UNIQUE VALUES
+Unique values 	10: 10
+Unique values 	 8: 8
+
+*****EVALUATING METHOD DESIGN
+This method is designed to help you figure out if you are fully taking advantage of the sorted nature of a BST.
+
+***IMPORTANT***: In order to use these tests, you must add code to the method you are evaluating.
+	The code should count how many iterations the method took- loops or recursion.
+	Use a local variable inside the method. At the end of the method, print that total count.
+
+Each test below will then show two counts.
+	If the two counts are very different: you might be okay for that method.
+	If the two iteration counts are equal or very close to each other... ALERT! You might not be fully taking advantage of the sorted nature of the BST for countEntriesNonRecursive.
+
+Don't forget to remove the test code before submission! :)
+
+Testing countEntriesNonRecursive Test A...
+
+Testing countEntriesNonRecursive Test B...
+
+Testing countGreaterWithStack...
+
+Testing countGreaterRecursive...
