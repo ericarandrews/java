@@ -1,0 +1,68 @@
+M6 for Data Structures and Algorithms
+
+For M6, the requirements are to...
+
+Project Description: 
+
+- Estimate find the running time of an algorithm 
+- Evaluate order of growth (efficiency, big o) 
+- Write code with a specific order of growth
+
+Notes:
+- When considering Big-O of code, be careful to consider the efficiency of methods invoked (sorting, contains, remove, etc.).
+- The biggest factors in efficiency are method calls and loops that are dependent on n.
+
+Project Requirements:
+
+Question 1
+* Estimate an answer to the question below. Describe your reasoning and assumptions and your final numeric estimate.
+- How many new cars/trucks/vans are sold each year in the U.S.?
+* Pretend that you are in an interview and do not have access to the internet or your phone.
+* You will not be graded on your answer. You will be graded on whether you describe your thought process and explain how you got your estimate.
+* Do not answer with a single number with no explanation.
+* Do not answer with numbers based on looking up the answer online. 
+* Include your final answer and the reasoning you used to get that answer.
+
+Question 2
+* Find the running time T(n) of the calculateSum method:
+- public static int calculateSum(int[] numbers) { 
+         int sum = 0; 
+         for(int i=0; i<numbers.length; i++) { 
+          sum += numbers[i]; } 
+         return sum; }
+* Note: You are finding the running time, not the order of growth. We know the order of growth is O(n).
+* Review examples for how to calculate running time.
+* List the steps leading to your calculation.
+* Count all operations, including loop controls, declarations, updates, return, etc.
+* i++ should be considered two statements (an addition and assignment).
+* Accessing a value from an array does not need to be counted as a step.
+* For example, numbers[i] = 1 is 1 statement (an assignment), not 2 statements.
+
+Question 3
+- Write a complete linear method to find duplicates:
+* The method below creates a List of all duplicate integers found on a List. This code runs in O(n3 ) time and this is considered bad.
+- public static List<Integer> findDuplicatesBad(List <Integer> numbers) {
+         List<Integer> duplicateList = new ArrayList<Integer>();
+          for(int i=0; i<numbers.size(); i++) {
+           int numberEvaluating = numbers.get(i); boolean duplicateFound = false;
+           for(int j=i+1; j<numbers.size() && !duplicateFound; j++) { int numberChecking = numbers.get(j);
+           if(numberEvaluating==numberChecking && duplicateList.contains(numberEvaluating)) { 
+            duplicateFound = true;
+            for(int k=j; k<numbers.size(); k++){
+              if(numberChecking==Integer.value Of(numbers.get(k))) { 
+               duplicateList.add(numberCheck ing); } } } } }
+          return duplicateList;}
+* For this question, write a new method to accomplish the same task, in O(n) time.
+
+1. Before you begin to write your own code, carefully review the method. Make sure you understand why that is the order of growth. It's not because of the three loops.
+You'll notice that the second and third loop will combine to only go through the list one time, so this is O(n) not O(n2 ).
+
+2. Write a new method to create a list of all duplicate integers found on a List.
+Note: That you are not revising or fixing the method below. You are writing a new method. Your method should be linear O(n).
+* Details about your method:
+- The numbers in the integer list passed in as a parameter are in the range -5n to 5n, where n is the size of the list.
+- Example: If the list is size 10, the numbers in the list are in the range -50 to 50.
+- Example: If the list is size 100, the numbers are in the range -500 to 500.
+- If a duplicate number shows up more than once on the original list, it should also show up more than once on the duplicate list.
+- Example: If the original list contains [1, 1, 1, 2, 2, 3, 4, 5, 5, 5], then the duplicates list should contain [1, 1, 2, 5, 5].
+- The order of your duplicates list does not matter. For ease in testing/comparing, the driver program sorts the lists before printing.
