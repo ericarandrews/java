@@ -1,0 +1,65 @@
+M5 for Data Structures and Algorithms
+
+For M5, the requirements are to...
+
+Project Description: 
+
+- Evaluate node code 
+- Work directly with node references 
+- Implement methods to go inside the LinkedBag class 
+- Implement methods to go inside the LList class
+
+Notes:
+- Make sure your code will not crash on an empty list/bag or a singleton list/bag (a list/bag that contains only one element, list, or node.
+- For an empty bag/list, firstNode is null.
+- For a singleton bag/list, firstNode.next is null.
+- You cannot invoke anything on null.
+- Do not invoke the toArray() method or create another data structure inside the code. For example, do not create an ArrayList or LinkedList inside of a method in the LinkedBag class.
+- Your answer should be efficient. Sometimes, directly accessing instance data variables rather than invoking an existing method can yield a more efficient solution. Think of an efficient solution as one that minimizes the number of passes through the array. Often times, a nested loop will occur when you have a method invoked inside of a loop, but that method involves going through the entire array. This results in a nested loop, which is very inefficient. Calls to methods like getNodeAt, getReferenceTo, getEntry, contains, add (LList only), and others loop through the chain every time they are called. So calling these within a loop likely creates inefficient code. You can usually avoid this by directly accessing the instance data variables or invoking different methods.
+- Avoid writing code that involves nested loops when possible.
+
+Project Requirements:
+
+Question 1
+- Write a method to print the values at a given interval in a chain of Strings, starting with the first node. 
+* The chain passed in should not be altered outside the method.
+* The method header is:
+- public static void printAtInterval(Node<String> firstNode, int interval)
+
+Note:
+The next questions ask you to write code at the developer level. This means you are writing code that goes inside the LinkedBag and LList class.
+
+Question 2
+- Write a removeAll method for the LinkedBag class. 
+* The method takes a value in as a parameter and removes every occurrence of that value. 
+* The method returns a count of how many elements were removed. 
+* The method header is:
+- public int removeAll(T element)
+
+Note:
+- Avoid methods that result in nested loops
+
+Question 3
+- Write a getMax method for the LList class. 
+* The method returns the largest object in the list. 
+* The method header is:
+- public T getMax()
+* Assume the bag contains objects whose classes implement Comparable. This means you can invoke compareTo on your objects of type T. The class header in LList is updated for this.
+
+Question 4
+- Write an addAll method for the LList class. 
+* The method adds an array of items (in order) to the end of the current list. 
+* The method header is:
+- public void addAll(T[] items)
+* Avoid methods that result in nested loops.
+
+Optional Extra Credit:
+- Write a method to determine if a doubly-linked list is a "palindrome list" meaning that the list contains equivalent elements front-to-back and back-to-front. 
+* The method header is:
+- public static boolean isDoublyLinkedPalindromeList (DoubleNode<Integer> firstNode, DoubleNode<Integer > lastNode)
+* FirstNode is the first node in the list and lastNode is the last node in the same list.
+Examples:
+1, 2, 3, 2, 1 is a palindrome list 
+1, 2, 2, 1 is a palindrome list 
+1, 2 is not a palindrome list 
+1, 2, 3, 4, 5 is not a palindrome list
