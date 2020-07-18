@@ -1,0 +1,58 @@
+M7 for Data Structures and Algorithms
+
+For M7, the requirements are to...
+
+Project Description: 
+
+- Trace recursion
+- Write recursive methods
+
+Notes:
+- When writing a recursive solution, you can always include additional private helper methods if you need extra parameters.
+- In these cases, the original method might not be recursive, but the helper method is. That's okay because the solution is recursive.
+- Make sure to include the helper method and the original method that invokes the helper method.
+- Do not include static variables to make the methods work.
+- Use only passed parameters and local variables declared inside the method.
+- When possible, use a helper method with extra parameters instead of destroying/rebuilding or copying the data.
+- Make sure you link the recursive calls together with return statements or local variables.
+
+Project Requirements:
+
+
+Question 1
+- Write a recursive void method that reverses the contents of an array. Do not create a new array. Reverse the contents of the current array.
+* The method header is:
+- public static void reverseArray(int[] array)
+
+
+Question 2
+- Write a recursive method to determine whether a String contains a 'q' not immediately followed by a 'u' (ignoring capitalization). In other words: the word does contain at least one 'q' and that q is followed by anything except a 'u'.
+* The method header is:
+- public static boolean qNotFollowedByU(String word)
+
+
+Question 3
+- Rewrite the getFrequencyOf method in the LinkedBag class using recursion. The original, non-recursive version is shown below for reference.
+* Non-recursive method in LinkedBag:
+- public int getFrequencyOf(T anEntry) { 
+          int frequency = 0; 
+          int counter = 0;
+          Node currentNode = firstNode;
+          while ((counter < numberOfEntries) && (currentNode != null)) { 
+            if (anEntry.equals(currentNode.data)) { frequency++; } 
+              counter++; 
+              currentNode = currentNode.next; } 
+        return frequency;}
+* Do not invoke the toArray method and directly use the node chain.
+
+
+Optional Extra Credit:
+- Write a countPositives method:
+* Write a recursive method that counts the number of positive integers in a bag. The bag should not be changed as a result of the method call. 
+* Do not:
+- Create a duplicate copy of the bag
+- Invoke the toArray method
+- Create a temporary data structure 
+- Hint: Think about how you can add code both before and after the recursive call.
+* The method header is:
+- public static int countPositives(BagInterface<Integer> bag)
