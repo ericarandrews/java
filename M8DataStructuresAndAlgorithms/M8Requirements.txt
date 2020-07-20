@@ -1,0 +1,46 @@
+M8 for Data Structures and Algorithms
+
+For M8, the requirements are to...
+
+Project Description: 
+
+- Evaluate sorts
+- Trace sorts 
+- Write code related to sorting 
+- Evaluate searches 
+- Trace searches
+
+Project Requirements:
+
+- The sortedness of a dataset is the degree to which that dataset is sorted, ranging from 0% to 100%. 
+- Write methods to measure the sortedness of data stored in an array and in a chain of linked nodes.
+- Sortedness can be measured in different ways. Use an approach based on inversions. An inversion is two elements such that the index of element1 is less than the index of element2, but the value of element1 is greater than the value of element2.
+- Compare neighbor elements only. The degree of sortedness is the percentage of neighbors that are in sorted order (meaning they are not inversions). The percentage should be a decimal value between 0 and 1.
+- Consider only ascending order (smallest to largest) as being sorted.
+- Example: [2, 2, 4, 6, 7] has a 100% sortedness factor- all neighbor pairs of numbers are sorted.
+- Example: [2, 2, 6, 4, 7] has a 75% sortedness factor- the 6-4 neighbor pair is not sorted, but all other neighbor pairs (2-2, 2-6, and 4-7) are sorted.
+- Example: [4, 5, 2] has a 50% sortedness factor- the 4-5 neighbor pair is sorted and the 5-2 neighbor pair is not.
+- Example: [7, 6, 4, 2, 1] has a 0% sortedness factor- no neighbor pairs are sorted in ascending order.
+
+Question 1
+* Write a method to measure sortedness of an array of Comparable elements.
+* The method header is:
+- public static double sortedness(Comparable[] array)
+
+Question 2
+* Write a method to measure sortedness of a collection of linked nodes that hold Comparable data.
+* The method header is:
+- public static double sortedness(Node<Comparable> node)
+
+Question 3
+* Trace Shell sort. 
+* Sort the data into ascending order (from smallest to largest). 
+* In addition to showing the contents of the array, list what the space/gap is for for that part of the trace.
+* Use the efficiency improvement, making sure the space is always odd.
+- Dataset: [30, 20, 24, 16, 10, 25, 12, 14]
+
+Question 4
+* Trace Merge sort. 
+* Sort the data into ascending order (from smallest to largest). Split down to 1-element arrays. 
+* Show how the arrays are split and how the arrays are merged.
+- Dataset: [37, 23, 28, 21, 12, 34, 15, 19]
