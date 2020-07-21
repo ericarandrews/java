@@ -1,0 +1,51 @@
+M10 for Data Structures and Algorithms
+
+For M10, the requirements are to...
+
+Project Description: 
+
+- Trace the use of stacks 
+- Use stacks to solve problems 
+- Write code to use stacks as a client 
+- Write code to go inside the stack classes (from the implementation perspective)
+
+Project Requirements:
+
+* Write a method called priorityPush that will be added to the LinkedStack class. The goal of the method is to either add a new element to the stack or, if the element already exists in the stack, move it up to the top ("prioritize" it).
+* The method works as follows: 
+- When invoked with an element not already in the stack: 
+1. The element is pushed as normal.
+2. Stack size increases by one.
+3. False is returned to indicate that the element was not prioritized, but just pushed as normal.
+- When invoked with an element already in the stack:
+1. The element is removed from the current position and placed on top of the stack.
+2. A duplicate element is not added; in other words, the stack size stays the same.
+3. True is returned to indicate that the element was prioritized.
+4. If more than one element exists in the stack, the first occurrence (closest to the top) is prioritized.
+* The method header is:
+- public boolean priorityPush(T element)
+
+Question 1
+* Write a complete priorityPush method.
+
+Question 2
+* Write a complete printFolderContentsWithStack method.
+* Review the Folder and File classes.
+* Review the printFolderContentsRecursive method. This method prints a tree-like hierarchy of all of the files and folders in a top level folder.
+* One use of stacks is to replace recursion. 
+* For this question, you will write a new method that accomplishes the same task as the recursive printFolderContentsRecursive method, but using a stack instead.
+* Use only the stack methods push, pop, peek, and isEmpty. 
+* You can create local variables of type Stack.
+* Use the returned List<Folder> and List<File> objects.
+* Do not create any new lists.
+* Match the indentation formatting of the recursive method.
+* Use only local variables and no data structures other than a stack.
+
+Optional Extra Credit
+* Write two peekNext methods, one for LinkedStack and one for ArrayStack.
+* A stack lets you peek at the top entry without removing it. For some applications, you might also want to peek at the entry beneath the top entry without removing it.
+* If the stack has two entries or more, peekNext returns the second entry from the top without altering the stack.
+* If the stack has fewer than two entries, peekNext should either return null or throw an exception.
+* Make sure your code is consistent with the existing peek method.
+* The method header for both classes:
+- public T peekNext()
