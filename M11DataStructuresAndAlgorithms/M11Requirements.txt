@@ -4,77 +4,77 @@ For M11, the requirements are to...
 
 Project Description: 
 
-	⁃	Trace the use of queues, deques, and priority queues 
-	⁃	Write code to use queues as a client 
-	⁃	Write code to go inside the queue classes (from the implementation perspective) 
-	⁃	Write code to create a deque implementation
+- Trace the use of queues, deques, and priority queues 
+- Write code to use queues as a client 
+- Write code to go inside the queue classes (from the implementation perspective) 
+- Write code to create a deque implementation
 
 Project Requirements:
 
-	•	The next three questions ask you to write splice methods. 
-	•	A splice method combines two queues by adding all elements of a second queue to the end of a first queue.
-	•	Keep these considerations in mind:
-	⁃	The secondQueue should not be altered when the method completes.
-	⁃	If you destroy the queue, be sure to rebuild it.
-	⁃	Do not connect the secondQueue to the first. Instead, add the actual elements to the first queue.
-	⁃	Write an efficient solution. Your code should be O(n).
-	•	When working from the implementation perspective:
-	⁃	Take advantage of being able to directly access the array or linked nodes of the secondQueue. 
-	⁃	Do not destroy and rebuild the secondQueue. Instead, access it directly through the array or linked nodes.
+* The next three questions ask you to write splice methods. 
+* A splice method combines two queues by adding all elements of a second queue to the end of a first queue.
+* Keep these considerations in mind:
+- The secondQueue should not be altered when the method completes.
+- If you destroy the queue, be sure to rebuild it.
+- Do not connect the secondQueue to the first. Instead, add the actual elements to the first queue.
+- Write an efficient solution. Your code should be O(n).
+* When working from the implementation perspective:
+- Take advantage of being able to directly access the array or linked nodes of the secondQueue. 
+- Do not destroy and rebuild the secondQueue. Instead, access it directly through the array or linked nodes.
 
 Notes:
-	⁃	It’s okay to invoke any of the O(1) methods in the current ArrayQueue or LinkedQueue class. 
-	⁃	You can invoke the enqueue method because it is O(1).
-	⁃	Use only queues in your answer. 
-	⁃	Do not use another data structure (e.g., ArrayList, LList, etc.).
+- It’s okay to invoke any of the O(1) methods in the current ArrayQueue or LinkedQueue class. 
+- You can invoke the enqueue method because it is O(1).
+- Use only queues in your answer. 
+- Do not use another data structure (e.g., ArrayList, LList, etc.).
 
 Question 1
-	•	Write a method called splice.
-	•	The method header is:
-	⁃	public static void splice(QueueInterface firstQueue, QueueInterface secondQueue)
-	⁃	You do not know how the queues are implemented. 
-	⁃	Use only the methods in QueueInterface.
-	⁃	The secondQueue should not be altered when the method completes. 
-	⁃	If you destroy the queue, be sure to rebuild it.
+* Write a method called splice.
+* The method header is:
+- public static void splice(QueueInterface firstQueue, QueueInterface secondQueue)
+- You do not know how the queues are implemented. 
+- Use only the methods in QueueInterface.
+- The secondQueue should not be altered when the method completes. 
+- If you destroy the queue, be sure to rebuild it.
 
 Question 2
-	•	Write a splice method for the ArrayQueue class.
-	•	The method header is:
-	⁃	public void splice(ArrayQueue<T> secondQueue)
-	⁃	The secondQueue should not be altered when the method completes.
-	⁃	The solution should not be the same as Question 1.
-	⁃	Take advantage of directly accessing the array of secondQueue.
-	⁃	Do not empty and rebuild the secondQueue.
+* Write a splice method for the ArrayQueue class.
+* The method header is:
+- public void splice(ArrayQueue<T> secondQueue)
+- The secondQueue should not be altered when the method completes.
+- The solution should not be the same as Question 1.
+- Take advantage of directly accessing the array of secondQueue.
+- Do not empty and rebuild the secondQueue.
 
 Question 3
-	•	Write a splice method for the LinkedQueue class.
-	•	The method header is:
-	⁃	public void splice(LinkedQueue<T> secondQueue)
-	⁃	The secondQueue should not be altered when the method completes. 
-	⁃	The solution should not be the same as Question 1.
-	⁃	Take advantage of directly accessing the node variables of secondQueue.
-	⁃	Do not empty and rebuild the secondQueue.
+* Write a splice method for the LinkedQueue class.
+* The method header is:
+- public void splice(LinkedQueue<T> secondQueue)
+- The secondQueue should not be altered when the method completes. 
+- The solution should not be the same as Question 1.
+- Take advantage of directly accessing the node variables of secondQueue.
+- Do not empty and rebuild the secondQueue.
 
 Question 4
-	•	Write a class called ListDeque.java.
-	•	Implement DequeInterface using a list as the underlying data structure. 
-	•	The class header is:
-	⁃	public class ListDeque<T> implements DequeInterface<T>
-	•	The instance data variable is: 
-	⁃	private List<T> list;
-	⁃	Invoke methods on the list object to implement the methods of the DequeInterface.
+* Write a class called ListDeque.java.
+* Implement DequeInterface using a list as the underlying data structure. 
+* The class header is:
+- public class ListDeque<T> implements DequeInterface<T>
+* The instance data variable is: 
+- private List<T> list;
+- Invoke methods on the list object to implement the methods of the DequeInterface.
 
 Notes:
-	⁃	The declared type is List (from the Java standard library).
-	⁃	You can choose whether to return null or throw an exception from methods that fail (e.g., removing from the back of an empty deque).
-	⁃	You will need to write a constructor and to choose how to initialize your list object.
+- The declared type is List (from the Java standard library).
+- You can choose whether to return null or throw an exception from methods that fail (e.g., removing from the back of an empty deque).
+- You will need to write a constructor and to choose how to initialize your list object.
 
 Optional Extra Credit 
-	•	Write two methods called getSecond.
-	•	The method header for both methods is:
-	⁃	public T getSecond()
-	⁃	A queue lets you get the front entry without removing it. 
-	⁃	For some applications, look at the entry behind the front entry without removing it.
-	⁃	Write two getSecond methods, one for ArrayQueue and one for LinkedQueue.
-	⁃	If the queue has two entries or more, getSecond returns the second entry (the entry after the front) without altering the queue.
-	⁃	If the queue has fewer than two entries, getSecond should throw an exception.
+* Write two methods called getSecond.
+* The method header for both methods is:
+- public T getSecond()
+- A queue lets you get the front entry without removing it. 
+- For some applications, look at the entry behind the front entry without removing it.
+- Write two getSecond methods, one for ArrayQueue and one for LinkedQueue.
+- If the queue has two entries or more, getSecond returns the second entry (the entry after the front) without altering the queue.
+- If the queue has fewer than two entries, getSecond should throw an exception.
