@@ -1,0 +1,263 @@
+*****************************************************TESTING CLIENT VIEW SPLICE
+q1 empty: 	true:true
+q2 empty: 	true:true
+
+q1 contains: 	4 8 9 2
+		4 8 9 2 
+q2 empty: 	true:true
+
+q1 contains: 	4 8 9 2 1 3 7 6 3 1
+		4 8 9 2 1 3 7 6 3 1 
+q2 contains: 	1 3 7 6 3 1
+		1 3 7 6 3 1 
+
+q1 contains: 	1 3 7 6 3 1
+		1 3 7 6 3 1 
+q2 contains: 	1 3 7 6 3 1
+		1 3 7 6 3 1 
+
+
+*****************************************************TESTING ARRAYQUEUE SPLICE
+wordQueue1 empty: 	true:true
+wordQueue2 empty: 	true:true
+
+GETSECOND: null:null
+GETSECOND: null:null
+
+wordQueue1 contains: 	a b c a
+			a b c a 
+wordQueue2 empty: 	true:true
+
+GETSECOND: b:b
+GETSECOND: null:null
+
+wordQueue1 contains: 	a b c a d e f e
+			a b c a d e f e 
+GETSECOND: b:b
+
+wordQueue2 contains: 	d e f e
+			d e f e 
+GETSECOND: e:e
+
+wordQueue1 contains: 	d e f e
+			d e f e 
+GETSECOND: e:e
+
+wordQueue2 contains: 	d e f e
+			d e f e 
+GETSECOND: e:e
+
+q1 contains: 	4 8 9 2 1 3 7 6
+		4 8 9 2 1 3 7 6 
+GETSECOND: 8:8
+
+q2 contains: 	1 3 7 6
+		1 3 7 6 
+GETSECOND: 3:3
+
+*****************************************************TESTING LINKEDQUEUE SPLICE
+lq1 empty: 	true:true
+lq2 empty: 	true:true
+
+lq1 contains: 	4 8 9 2
+		4 8 9 2 
+GETSECOND: 8:8
+
+lq2 still empty (and no exception thrown): true:true
+queue1 firstNode 4:4 lastNode 2:2
+
+q1 contains: 	4 8 9 2 1 3 7 6
+		4 8 9 2 1 3 7 6 
+GETSECOND: 8:8
+
+q2 contains: 	1 3 7 6
+		1 3 7 6 
+GETSECOND: 3:3
+
+queue1 firstNode 4:4 lastNode 6:6   queue2 firstNode 1:1 lastNode 6:6
+
+q1 contains: 	1 3 7 6
+		1 3 7 6 
+GETSECOND: 3:3
+
+q2 contains: 	1 3 7 6
+		1 3 7 6 
+GETSECOND: 3:3
+
+queue1 firstNode 1:1 lastNode 6:6   queue2 firstNode 1:1 lastNode 6:6
+
+q1 contains: 	1 3 7 6
+		1 3 7 6 
+GETSECOND: 3:3
+
+q2 contains: 	3 7 6 12
+		3 7 6 12 
+GETSECOND: 7:7
+
+queue1 firstNode 1:1 lastNode 6:6   queue2 firstNode 3:3 lastNode 12:12
+
+
+*****************************************************TESTING LISTDEQUE METHODS
+
+********TESTING ISEMPTY AND EMPTY DISPLAY
+Empty is true: true
+
+Should display:
+0 elements; capacity = 10
+0 elements; capacity = 10
+[ ]
+
+
+
+********TESTING ADD TO FRONT
+Should display:
+1 elements; capacity = 10	[2]
+1 elements; capacity = 10
+[ 2 ]
+
+Should display:
+3 elements; capacity = 10	[3, 4, 2]
+3 elements; capacity = 10
+[ 3 4 2 ]
+
+GETFRONT: 3:3
+GETBACK:  2:2
+Empty is false: false
+
+
+********TESTING CLEAR
+Should display:
+0 elements; capacity = 10
+0 elements; capacity = 10
+[ ]
+
+
+********TESTING ADD TO BACK
+Should display:
+1 elements; capacity = 10	[7]
+1 elements; capacity = 10
+[ 7 ]
+
+Should display:
+3 elements; capacity = 10	[7, 10, 5]
+3 elements; capacity = 10
+[ 7 10 5 ]
+
+GETFRONT: 7:7
+GETBACK:  5:5
+
+
+********TESTING CONTAINS
+Contains 5 true:  true
+Contains 7 true:  true
+Contains 4 false: false
+
+
+********TESTING ADD WITH EXPANSION
+Should display:
+32 elements; capacity = 40	[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+32 elements; capacity = 40
+[ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 ]
+
+GETFRONT: 0:0
+GETBACK:  31:31
+
+
+********TESTING INDEX OF
+Index of 0  is  0: 0
+Index of 31 is 31: 31
+Index of -5 is -1: -1
+Index of 32 is -1: -1
+Index of 3  is  0: 0
+Index of 5  is  6: 6
+
+
+********TESTING LAST INDEX OF
+Last index of 0  is  1:  1
+Last index of 31 is 32: 32
+Last index of -5 is -1: -1
+Last index of 35 is -1: -1
+Last index of 3  is  4:  4
+Last index of 5  is  33: 33
+
+
+********TESTING SIZE
+Size is 34: 34
+
+
+********TESTING GET ENTRY
+Element in position 15 is 14: 14
+Element in position  0 is  3: 3
+Element in position 39 is null: null
+Element in position -1 is null: null
+
+
+********TESTING REMOVES
+Remove front element 3: 3
+Remove back element  5 :5
+Remove front element 0: 0
+Remove back element 31: 31
+
+Should display:
+30 elements; capacity = 40	[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+30 elements; capacity = 40
+[ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 ]
+
+GETFRONT: 1:1
+GETBACK:  30:30
+
+Remove element null: null
+Remove element null: null
+
+Remove element 1: 1
+Should display:
+0 elements; capacity = 40
+0 elements; capacity = 40
+[ ]
+
+
+Remove element 1: 1
+Should display:
+0 elements; capacity = 40
+0 elements; capacity = 40
+[ ]
+
+
+Remove element 1: 1
+Should display:
+0 elements; capacity = 40
+0 elements; capacity = 40
+[ ]
+
+
+Remove element 1: 1
+Should display:
+0 elements; capacity = 40
+0 elements; capacity = 40
+[ ]
+
+
+
+
+********TESTING MIX OF ADDS AND REMOVES
+Should display:
+7 elements; capacity = 40	[5, 4, 3, 2, 3, 8, 9]
+7 elements; capacity = 40
+[ 5 4 3 2 3 8 9 ]
+
+GETFRONT: 5:5
+GETBACK:  9:9
+
+Should display:
+5 elements; capacity = 40	[4, 3, 2, 3, 8]
+5 elements; capacity = 40
+[ 4 3 2 3 8 ]
+
+GETFRONT: 4:4
+GETBACK:  8:8
+
+********TESTING WITH STRINGS
+Should display:
+5 elements; capacity = 8	[You, did, it!, Nice, job!]
+5 elements; capacity = 8
+[ You did it! Nice job! ]
