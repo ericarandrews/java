@@ -1,0 +1,176 @@
+***************TESTING EQUALS AND HASHCODE METHOD IN STUDENT CLASS
+***Testing with equivalent students:
+testStudent and equiv1 equivalent 	true:  true
+testStudent and equiv2 equivalent 	true:  true
+testStudent and equiv1 same hashCode 	true:  true
+testStudent and equiv2 same hashCode 	true:  true
+Add testStudent to a set		true:  true
+Try to add testStudent again 		false: false
+Try to add equiv1  			false: false
+Try to add equiv2 			false: false
+
+***Testing equals method with non-equivalent students:
+testStudent and differentStudent equivalent 	false: false
+testStudent and differentStudent equivalent 	false: false
+testStudent and differentStudent equivalent 	false: false
+testStudent and differentStudent equivalent 	false: false
+
+***Testing equals/hashCode contract with non-equivalent students:
+testStudent and differentStudent equivalent 	false: false
+testStudent and differentStudent equivalent 	false: false
+
+***************TESTING WITH TABLE SIZE 10
+
+*****TESTING ADD TO VOTER HASHTABLE
+Each voter should be added to the table- each should print true.
+Added Delta Dem  	true: true
+Added Rita Rep  	true: true
+Added Ida Inde  	true: true
+Added Greta Green  	true: true
+Added Liz Libert  	true: true
+Added Ursula Undec  	true: true
+
+Compare your table to the location of where each voter should be. They should match.
+
+Here is your table:
+Location 912: Delta Dem
+Location 670: Rita Rep
+Location 381: Ida Inde
+Location 497: Greta Green
+Location 301: Liz Libert
+Location 541: Ursula Undec
+
+The locations below should match the table above.
+Delta Dem	Location 912
+Rita Rep	Location 670
+Ida Inde	Location 381
+Greta Green	Location 497
+Liz Libert	Location 301
+Ursula Undec	Location 541
+
+*****TESTING RETRIEVE FROM
+Get these voters based on their ID. The voter retrieved should match what is asked for.
+Retreiving 912 (Delta Dem) 	: Delta Dem (912)
+Retreiving 670 (Rita Rep) 	: Rita Rep (670)
+Retreiving 381 (Ida Inde) 	: Ida Inde (381)
+Retreiving 497 (Greta Green) 	: Greta Green (497)
+Retreiving 301 (Liz Libert) 	: Liz Libert (301)
+Retreiving 541 (Ursula Undec) 	: Ursula Undec (541)
+Retrieved Nancy NotAVoter? 	should be null: null
+
+*****TESTING EXTRA CREDIT- NO ADDING DUPLICATES
+These voters are duplicates and should not be added- each should print false.
+Delta Dem    added again?			false: false
+Rita Rep    added again?			false: false
+Ida Inde    added again?			false: false
+Greta Green    added again?			false: false
+Liz Libert    added again?			false: false
+Ursula Undec    added again?			false: false
+Equivalent of Delta Dem added?			false: false
+Equivalent of Delta Dem added?			false: false
+Equivalent of Ursula Undec again?		false: false
+Equivalent of Ursula Undec again?		false: false
+
+***************TESTING WITH TABLE SIZE 10
+
+*****TESTING ADD TO VOTER HASHTABLE
+Each voter should be added to the table- each should print true.
+Added Delta Dem  	true: true
+Added Rita Rep  	true: true
+Added Ida Inde  	true: true
+Added Greta Green  	true: true
+Added Liz Libert  	true: true
+Added Ursula Undec  	true: true
+
+Compare your table to the location of where each voter should be. They should match.
+
+Here is your table:
+Location 912: Delta Dem
+Location 670: Rita Rep
+Location 381: Ida Inde
+Location 497: Greta Green
+Location 301: Liz Libert
+Location 541: Ursula Undec
+
+The locations below should match the table above.
+Delta Dem	Location 912
+Rita Rep	Location 670
+Ida Inde	Location 381
+Greta Green	Location 497
+Liz Libert	Location 301
+Ursula Undec	Location 541
+
+*****TESTING RETRIEVE FROM
+Get these voters based on their ID. The voter retrieved should match what is asked for.
+Retreiving 912 (Delta Dem) 	: Delta Dem (912)
+Retreiving 670 (Rita Rep) 	: Rita Rep (670)
+Retreiving 381 (Ida Inde) 	: Ida Inde (381)
+Retreiving 497 (Greta Green) 	: Greta Green (497)
+Retreiving 301 (Liz Libert) 	: Liz Libert (301)
+Retreiving 541 (Ursula Undec) 	: Ursula Undec (541)
+Retrieved Nancy NotAVoter? 	should be null: null
+
+*****TESTING EXTRA CREDIT- NO ADDING DUPLICATES
+These voters are duplicates and should not be added- each should print false.
+Delta Dem    added again?			false: false
+Rita Rep    added again?			false: false
+Ida Inde    added again?			false: false
+Greta Green    added again?			false: false
+Liz Libert    added again?			false: false
+Ursula Undec    added again?			false: false
+Equivalent of Delta Dem added?			false: false
+Equivalent of Delta Dem added?			false: false
+Equivalent of Ursula Undec again?		false: false
+Equivalent of Ursula Undec again?		false: false
+
+***************TESTING WITH TABLE SIZE 10
+
+*****TESTING ADD TO VOTER HASHTABLE
+Each voter should be added to the table- each should print true.
+Added Delta Dem  	true: true
+Added Rita Rep  	true: true
+Added Ida Inde  	true: true
+Added Greta Green  	true: true
+Added Liz Libert  	true: true
+Added Ursula Undec  	true: true
+
+Compare your table to the location of where each voter should be. They should match.
+
+Here is your table:
+Location 912: Delta Dem
+Location 670: Rita Rep
+Location 381: Ida Inde
+Location 497: Greta Green
+Location 301: Liz Libert
+Location 541: Ursula Undec
+
+The locations below should match the table above.
+Delta Dem	Location 912
+Rita Rep	Location 670
+Ida Inde	Location 381
+Greta Green	Location 497
+Liz Libert	Location 301
+Ursula Undec	Location 541
+
+*****TESTING RETRIEVE FROM
+Get these voters based on their ID. The voter retrieved should match what is asked for.
+Retreiving 912 (Delta Dem) 	: Delta Dem (912)
+Retreiving 670 (Rita Rep) 	: Rita Rep (670)
+Retreiving 381 (Ida Inde) 	: Ida Inde (381)
+Retreiving 497 (Greta Green) 	: Greta Green (497)
+Retreiving 301 (Liz Libert) 	: Liz Libert (301)
+Retreiving 541 (Ursula Undec) 	: Ursula Undec (541)
+Retrieved Nancy NotAVoter? 	should be null: null
+
+*****TESTING EXTRA CREDIT- NO ADDING DUPLICATES
+These voters are duplicates and should not be added- each should print false.
+Delta Dem    added again?			false: false
+Rita Rep    added again?			false: false
+Ida Inde    added again?			false: false
+Greta Green    added again?			false: false
+Liz Libert    added again?			false: false
+Ursula Undec    added again?			false: false
+Equivalent of Delta Dem added?			false: false
+Equivalent of Delta Dem added?			false: false
+Equivalent of Ursula Undec again?		false: false
+Equivalent of Ursula Undec again?		false: false
