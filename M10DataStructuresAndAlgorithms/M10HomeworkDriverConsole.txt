@@ -1,0 +1,69 @@
+*****TESTING PRIORITY PUSH
+***BOTTOM ... TOP***
+2 4 6 8 10
+2 4 6 8 10 
+
+
+Push 12:
+2 4 6 8 10 12 prioritized=false
+2 4 6 8 10 12 prioritized=false
+
+
+Push 2:
+4 6 8 10 12 2 prioritized=true
+4 6 8 10 12 2 prioritized=true
+
+
+Push 2:
+4 6 8 10 12 2 prioritized=true
+4 6 8 10 12 2 prioritized=true
+
+
+Push 6:
+4 8 10 12 2 6 prioritized=true
+4 8 10 12 2 6 prioritized=true
+
+
+Push 12:
+4 8 10 2 6 7 5 12 prioritized=true
+4 8 10 2 6 7 5 12 prioritized=true
+
+Push 6:
+6 prioritized=false
+6 prioritized=false
+
+
+Push 6:
+6 prioritized=true
+6 prioritized=true
+
+Push 14:
+6 14 prioritized=false
+6 14 prioritized=false
+
+
+Push dog:
+cat ant dog prioritized=true
+cat ant dog prioritized=true
+
+
+
+*****TESTING PEEKNEXT IN LINKEDSTACAK
+Should print null/throw exception: 
+null
+Should print null/throw exception: 
+null
+Should print 	hello: hello
+Should print 	goodbye: goodbye
+Should print 	and good night: and good night
+
+
+
+*****TESTING PEEK2 IN ARRAYSTACAK
+Should print null/throw exception: 
+null
+Should print null/throw exception: 
+null
+Should print 	hello: hello
+Should print 	goodbye: goodbye
+Should print 	and good night: and good night
