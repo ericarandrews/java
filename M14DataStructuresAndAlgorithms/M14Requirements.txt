@@ -1,0 +1,38 @@
+M14 for Data Structures and Algorithms
+
+For M14, the requirements are to...
+
+Project Description: 
+
+- Trace hashing, HashSets, and HashMaps.
+- Write code related to hashing.
+
+Project Requirements:
+
+Question 1
+* Write a equals method and hashCode method.
+- Complete the Student class provided in the homework files.
+- Override the equals method and the hashCode method. 
+- Take into account the student's id, first name, last name, and the variable that represents whether they have paid their fees.
+* Write both methods (equals and hashCode), including the complete method headers.
+* Make sure your methods satisfy the equals and hashCode contracts (https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html).
+* You can test your methods using the driver.
+Important: Use the Student class from the homework files.
+
+Question 2
+* Write a file called VoterHashTableSeparateChaining.java.
+- Review the provided hash table class. 
+- The class is designed to store voter data in a hashtable using separate chaining (open buckets).
+- Voters are uniquely identified by their voterID.
+- Implement three methods to complete this class:
+1. public int getHashTableLocation(int voterID)
+- This method takes in a voterID and returns the location in the hash table where that voter will be placed 
+2. public boolean addVoter(Voter voterToAdd)
+- Adds a new Voter to the hashtable and returns a status of whether or not the add was successful 
+- This method returns a boolean because of the extra credit. If the extra credit is not completed, this method will always return true.
+3. public Voter getVoter(int voterID)
+- Takes in a voterID and returns the Voter object associated with that id, or null if a voter for that id is not in the table.
+
+Optional Extra Credit: 
+- In your addVoter method, make it so the hashtable does not accept duplicate voters.
+- If completing the extra credit, write only one addVoter method that accounts for duplicates, not two separate methods.
