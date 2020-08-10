@@ -1,0 +1,31 @@
+M3 for Advanced Java
+
+For M3, the requirements are to...
+
+Description: 
+
+- You can simplify or otherwise modify your M1 and M2 classes.
+
+Requirements:
+
+1. Builder: Convert one of your classes to use a builder.
+- Write the complete builder.
+- If none of your classes make sense to create a builder (e.g., they all have 1-2 parameters in the constructors), you are also allowed to create another class that fits in your context as a builder. This class does not have to be related by inheritance to the others.
+- Use the builder in a way that makes sense, meaning not for a constructor with 1-2 parameters.
+- Add code that uses the builder to create an object. This can go in your driver/tester or in one of your other classes. Whatever makes sense.
+
+2. Factory: Write a factory method.
+- Write the complete factory method.
+- The method can go in a separate factory class or in one of your other classes.
+- Add code to create objects using the factory method. This can go in your driver/tester or in one of your other classes. Whatever makes sense.
+
+3. Strategy: Implement the strategy pattern.
+- Create an interface that describes a functionality.
+- Make sure the interface makes sense for the strategy pattern.
+- Write at least two classes that implement the interface.
+- Include an instance of the interface in your classes as an instance data variable.
+- Write a method to invoke the method of the interface on this instance from inside the class.
+
+4. Comparator: Write a Comparator class for one of your classes.
+- Write the complete Comparator class.
+- In your driver program, sort your list of objects using the Comparator.
