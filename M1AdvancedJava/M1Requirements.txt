@@ -1,0 +1,33 @@
+M1 for Advanced Java
+
+For M1, the requirements are to...
+
+Description: 
+
+- Write a series of classes to represent an inheritance relationship.
+- Choose the context (e.g., a school course registration system, a banking system, healthcare management, images for animation, etc.).
+- You will be using, modifying, adding to, and building on these classes for M2 and M3.
+
+Requirements:
+
+Your classes must compile to meet the following requirements:
+- At least one parent class and at least three child/grandchild classes that form an "is a" relationship.
+- Each class must contain (either directly OR inherited from a parent):
+- Instance data variables 
+- Constructor(s) 
+- Getters and Setters 
+- Overridden toString method 
+- Overridden equals method 
+- Your classes must have a total of at least three class-specific methods.
+- You can have simple printlns as the method implementation for M1.
+- These methods must represent functionality of objects. This means, some action or behavior that the object takes or that is taken on the object; Note: The getters/setters do not count.
+- These methods must be instance methods - this means they cannot be static.
+
+Write a driver program to demonstrate your classes:
+1. Create an array or ArrayList using the parent class as the declared type.
+2. Fill with several different child objects.
+3. Invoke at least two methods on the objects. If the method exists only in the child class, use instanceof and a downcast.
+- Your class should follow Java coding conventions and best practices.
+- Follow the principles of object-oriented class design, encapsulation, and inheritance. 
+- Follow naming conventions for variables, classes, and methods. 
+- Note: Reduce duplicated code.
