@@ -1,0 +1,23 @@
+M2 for Advanced Java
+
+For M2, the requirements are to...
+
+Description: 
+
+- Make modifications or simplify your classes, as necessary, from M1.
+
+Requirements:
+
+1. Add one static variable and one static method to one class.
+- The static variable and method must go in the parent/child classes, not in the driver class. 
+- The static variable must be a variable, not a constant (not "final").
+- If you already had a static variable or method in your original code, you do not need to add another. 
+2. Implement the Comparable interface in one of your classes.
+- Write the compareTo method.
+3. In your driver/tester program, create an array or ArrayList of objects and sort them with the Java-provided sorting methods. 
+- Note: This will use your compareTo method.
+4. Add one enum to your files.
+- The enum must contain at least one field and at least one method. This means the enum values must be associated with at least one additional piece of information (described in the field).
+- The enum also must have one method declared inside the enum. This method can then be invoked on variables of the enum type.
+- The enum can be declared within a class or as a separate class.
+5. Use your enum somewhere in one of your classes.
