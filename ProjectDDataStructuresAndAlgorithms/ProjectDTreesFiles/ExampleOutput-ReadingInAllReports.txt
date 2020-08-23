@@ -1,0 +1,347 @@
+SECTION A: TREE BUILT FROM A SORTED LIST, ASCENDING
+	...building tree with entry 5000
+	...building tree with entry 10000
+	...building tree with entry 15000
+	...building tree with entry 20000
+	...building tree with entry 25000
+	...building tree with entry 30000
+	...building tree with entry 35000
+	...building tree with entry 40000
+	...building tree with entry 45000
+	...building tree with entry 50000
+	...building tree with entry 55000
+	...building tree with entry 60000
+	...building tree with entry 65000
+	...building tree with entry 70000
+	...building tree with entry 75000
+	...building tree with entry 80000
+	...building tree with entry 85000
+	...building tree with entry 90000
+	...building tree with entry 95000
+	...building tree with entry 100000
+	...building tree with entry 105000
+	...building tree with entry 110000
+	...building tree with entry 115000
+	...building tree with entry 120000
+	...building tree with entry 125000
+	...building tree with entry 130000
+	...building tree with entry 135000
+	...building tree with entry 140000
+	...building tree with entry 145000
+	...building tree with entry 150000
+	...building tree with entry 155000
+	...building tree with entry 160000
+	...building tree with entry 165000
+	...building tree with entry 170000
+	...building tree with entry 175000
+	...building tree with entry 180000
+	...building tree with entry 185000
+	...building tree with entry 190000
+	...building tree with entry 195000
+	...building tree with entry 200000
+	...building tree with entry 205000
+	...building tree with entry 210000
+	...building tree with entry 215000
+	...building tree with entry 220000
+	...building tree with entry 225000
+	...building tree with entry 230000
+	...building tree with entry 235000
+	...building tree with entry 240000
+	...building tree with entry 245000
+	...building tree with entry 250000
+	...building tree with entry 255000
+	...building tree with entry 260000
+	...building tree with entry 265000
+	...building tree with entry 270000
+	...building tree with entry 275000
+	...building tree with entry 280000
+	...building tree with entry 285000
+	...building tree with entry 290000
+	...building tree with entry 295000
+	...building tree with entry 300000
+	...building tree with entry 305000
+	...building tree with entry 310000
+	...building tree with entry 315000
+	...building tree with entry 320000
+	...building tree with entry 325000
+	...building tree with entry 330000
+	...building tree with entry 335000
+	...building tree with entry 340000
+	...building tree with entry 345000
+	...building tree with entry 350000
+	...building tree with entry 355000
+	...building tree with entry 360000
+	...building tree with entry 365000
+	...building tree with entry 370000
+Time required to build tree: 35162 milliseconds
+Root is Incident #30003030	Date: 2003-01-01
+Number of nodes: 371864
+Number of nodes equal to the root: 72
+Number of nodes bigger than root: 371792
+Number of nodes in left subtree: 71
+Number of nodes in right subtree: 371792
+Left height: 71
+Right height: 4804
+Tree build and report complete!
+
+Incident Date: 1/1/2003
+Number of incidents:		Tree: 72 	List: 72
+Time required:			Tree: 0 	List: 30
+
+Incident Date: 10/27/2015
+Number of incidents:		Tree: 73 	List: 73
+Time required:			Tree: 1 	List: 17
+
+Incident Date: 10/02/2009
+Number of incidents:		Tree: 76 	List: 76
+Time required:			Tree: 0 	List: 18
+
+Incident Date: 03/23/2010
+Number of incidents:		Tree: 58 	List: 58
+Time required:			Tree: 1 	List: 15
+
+Incident Date: 03/28/2015
+Number of incidents:		Tree: 176 	List: 176
+Time required:			Tree: 1 	List: 14
+
+Incident Date: 11/9/2018
+Number of incidents:		Tree: 0 	List: 0
+Time required:			Tree: 2 	List: 15
+
+Incident Date: 11/9/2000
+Number of incidents:		Tree: 0 	List: 0
+Time required:			Tree: 0 	List: 15
+
+
+SECTION B: TREE BUILT FROM A SHUFFLED LIST
+	...building tree with entry 5000
+	...building tree with entry 10000
+	...building tree with entry 15000
+	...building tree with entry 20000
+	...building tree with entry 25000
+	...building tree with entry 30000
+	...building tree with entry 35000
+	...building tree with entry 40000
+	...building tree with entry 45000
+	...building tree with entry 50000
+	...building tree with entry 55000
+	...building tree with entry 60000
+	...building tree with entry 65000
+	...building tree with entry 70000
+	...building tree with entry 75000
+	...building tree with entry 80000
+	...building tree with entry 85000
+	...building tree with entry 90000
+	...building tree with entry 95000
+	...building tree with entry 100000
+	...building tree with entry 105000
+	...building tree with entry 110000
+	...building tree with entry 115000
+	...building tree with entry 120000
+	...building tree with entry 125000
+	...building tree with entry 130000
+	...building tree with entry 135000
+	...building tree with entry 140000
+	...building tree with entry 145000
+	...building tree with entry 150000
+	...building tree with entry 155000
+	...building tree with entry 160000
+	...building tree with entry 165000
+	...building tree with entry 170000
+	...building tree with entry 175000
+	...building tree with entry 180000
+	...building tree with entry 185000
+	...building tree with entry 190000
+	...building tree with entry 195000
+	...building tree with entry 200000
+	...building tree with entry 205000
+	...building tree with entry 210000
+	...building tree with entry 215000
+	...building tree with entry 220000
+	...building tree with entry 225000
+	...building tree with entry 230000
+	...building tree with entry 235000
+	...building tree with entry 240000
+	...building tree with entry 245000
+	...building tree with entry 250000
+	...building tree with entry 255000
+	...building tree with entry 260000
+	...building tree with entry 265000
+	...building tree with entry 270000
+	...building tree with entry 275000
+	...building tree with entry 280000
+	...building tree with entry 285000
+	...building tree with entry 290000
+	...building tree with entry 295000
+	...building tree with entry 300000
+	...building tree with entry 305000
+	...building tree with entry 310000
+	...building tree with entry 315000
+	...building tree with entry 320000
+	...building tree with entry 325000
+	...building tree with entry 330000
+	...building tree with entry 335000
+	...building tree with entry 340000
+	...building tree with entry 345000
+	...building tree with entry 350000
+	...building tree with entry 355000
+	...building tree with entry 360000
+	...building tree with entry 365000
+	...building tree with entry 370000
+Time required to build tree: 1874 milliseconds
+Root is Incident #96028014	Date: 2009-04-25
+Number of nodes: 371864
+Number of nodes equal to the root: 77
+Number of nodes bigger than root: 209029
+Number of nodes in left subtree: 162834
+Number of nodes in right subtree: 209029
+Left height: 127
+Right height: 194
+Tree build and report complete!
+
+Incident Date: 1/1/2003
+Number of incidents:		Tree: 72 	List: 72
+Time required:			Tree: 0 	List: 21
+
+Incident Date: 10/27/2015
+Number of incidents:		Tree: 73 	List: 73
+Time required:			Tree: 0 	List: 25
+
+Incident Date: 10/02/2009
+Number of incidents:		Tree: 76 	List: 76
+Time required:			Tree: 0 	List: 23
+
+Incident Date: 03/23/2010
+Number of incidents:		Tree: 58 	List: 58
+Time required:			Tree: 0 	List: 23
+
+Incident Date: 03/28/2015
+Number of incidents:		Tree: 176 	List: 176
+Time required:			Tree: 0 	List: 22
+
+Incident Date: 11/9/2018
+Number of incidents:		Tree: 0 	List: 0
+Time required:			Tree: 0 	List: 25
+
+Incident Date: 11/9/2000
+Number of incidents:		Tree: 0 	List: 0
+Time required:			Tree: 1 	List: 22
+
+
+EXTRA CREDIT: UNIQUE VALUES
+Unique Values (with all reports read in) 	4681: 4681
+
+SECTION C: TREE BUILT FROM A SORTED LIST, DESCENDING
+	...building tree with entry 5000
+	...building tree with entry 10000
+	...building tree with entry 15000
+	...building tree with entry 20000
+	...building tree with entry 25000
+	...building tree with entry 30000
+	...building tree with entry 35000
+	...building tree with entry 40000
+	...building tree with entry 45000
+	...building tree with entry 50000
+	...building tree with entry 55000
+	...building tree with entry 60000
+	...building tree with entry 65000
+	...building tree with entry 70000
+	...building tree with entry 75000
+	...building tree with entry 80000
+	...building tree with entry 85000
+	...building tree with entry 90000
+	...building tree with entry 95000
+	...building tree with entry 100000
+	...building tree with entry 105000
+	...building tree with entry 110000
+	...building tree with entry 115000
+	...building tree with entry 120000
+	...building tree with entry 125000
+	...building tree with entry 130000
+	...building tree with entry 135000
+	...building tree with entry 140000
+	...building tree with entry 145000
+	...building tree with entry 150000
+	...building tree with entry 155000
+	...building tree with entry 160000
+	...building tree with entry 165000
+	...building tree with entry 170000
+	...building tree with entry 175000
+	...building tree with entry 180000
+	...building tree with entry 185000
+	...building tree with entry 190000
+	...building tree with entry 195000
+	...building tree with entry 200000
+	...building tree with entry 205000
+	...building tree with entry 210000
+	...building tree with entry 215000
+	...building tree with entry 220000
+	...building tree with entry 225000
+	...building tree with entry 230000
+	...building tree with entry 235000
+	...building tree with entry 240000
+	...building tree with entry 245000
+	...building tree with entry 250000
+	...building tree with entry 255000
+	...building tree with entry 260000
+	...building tree with entry 265000
+	...building tree with entry 270000
+	...building tree with entry 275000
+	...building tree with entry 280000
+	...building tree with entry 285000
+	...building tree with entry 290000
+	...building tree with entry 295000
+	...building tree with entry 300000
+	...building tree with entry 305000
+	...building tree with entry 310000
+	...building tree with entry 315000
+	...building tree with entry 320000
+	...building tree with entry 325000
+	...building tree with entry 330000
+	...building tree with entry 335000
+	...building tree with entry 340000
+	...building tree with entry 345000
+	...building tree with entry 350000
+	...building tree with entry 355000
+	...building tree with entry 360000
+	...building tree with entry 365000
+	...building tree with entry 370000
+Time required to build tree: 2900324 milliseconds
+Root is Incident #150939818	Date: 2015-10-27
+Cannot find the number of nodes! Stack overflow.
+Number of nodes equal to the root: 73
+Number of nodes bigger than root: 0
+Cannot find the number of nodes in the left subtree! Stack overflow.
+Number of nodes in right subtree: 0
+Cannot find the left height! Stack overflow.
+Right height: 0
+Tree build and report complete!
+
+Incident Date: 1/1/2003
+Number of incidents:		Tree: 72 	List: 72
+Time required:			Tree: 17 	List: 17
+
+Incident Date: 10/27/2015
+Number of incidents:		Tree: 73 	List: 73
+Time required:			Tree: 0 	List: 16
+
+Incident Date: 10/02/2009
+Number of incidents:		Tree: 76 	List: 76
+Time required:			Tree: 6 	List: 16
+
+Incident Date: 03/23/2010
+Number of incidents:		Tree: 58 	List: 58
+Time required:			Tree: 6 	List: 16
+
+Incident Date: 03/28/2015
+Number of incidents:		Tree: 176 	List: 176
+Time required:			Tree: 1 	List: 18
+
+Incident Date: 11/9/2018
+Number of incidents:		Tree: 0 	List: 0
+Time required:			Tree: 0 	List: 15
+
+Incident Date: 11/9/2000
+Number of incidents:		Tree: 0 	List: 0
+Time required:			Tree: 11 	List: 16
+
