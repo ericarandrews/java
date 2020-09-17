@@ -1,0 +1,46 @@
+M12 for Advanced Java
+
+For M12, the requirements are to...
+
+Description: 
+
+- Create threads for a diner simulation program. This is a program that uses the producer/consumer relationship.
+
+Requirements:
+
+Diner Description
+* Here is a description of the diner that your program will simulate:
+- Each food is described by an amount of time it takes to cook and the amount of time it takes to serve.
+- There is only one cook and one server.
+- The cook can only cook one thing at a time.
+- The server can only serve one thing at at time.
+- The cook hands food to the server to be served.
+- There are only three spots where the food can be placed to wait for the server.
+- If the cook has a fourth food ready, he/she has to wait until the server frees up a spot.
+
+The Food class is provided. You will complete the FoodTester class and write two new classes, a CookThread class and a ServeThread class.
+- Write a thread class for the CookThread class.
+- Write a thread class for the ServeThread class.
+- Complete the FoodTester class.
+
+The CookThread and ServeThread Classes
+- The CookThread should take the foodList in as a parameter.
+- The cook takes items from the list, cooks them, then places them to be served.
+- When all items from the list have been cooked, this thread can end. The cook gets to go home.
+- The ServeThread also needs to know when to stop. You can use something as simple as the number of foods that need to be served or you can get more complex.
+- Use the Thread.sleep method to simulate the cook/serve time for each food.
+- Decide what other parameters/variables you need in these classes.
+Important Note:
+- Use any implementation of producer/consumer that you want. Recommend, however, to use BlockingQueue.
+
+Complete the FoodTester Class
+- A partial FoodTester program is provided. 
+- The FoodTester class includes a printout of the time, each second, to track the simulation.
+- Sample output is also included.
+- Note: It might not match your output exactly. The time printouts might be before/after the program printouts. However, the general structure and order of the output should match.
+To complete the FoodTester class:
+- Declare any shared variables you want to send to the thread classes.
+- Initialize and start your threads.
+- Use streams to complete the two printouts at the bottom.
+- Print the total amount of time required to cook and serve all foods.
+- Note: This output is not related to the threads. It's just to practice streams.
