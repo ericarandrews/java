@@ -1,0 +1,52 @@
+M6 for Advanced Java
+
+For M6, the requirements are to...
+
+Description: 
+
+- Complete a program provided to create a GUI that allows the user to upload and process customer data.
+
+Requirements:
+
+Part 1: Normal Execution Flow 
+
+* Review the provided files, modify and complete the program.
+* Note: The code uses a GUI control for file upload.
+* Your program should do the following for a properly-formatted input file:
+1. Read in a comma-separated value file (.csv) that contains Customer data.
+- Customer data is made up of a String id and an integer number of orders.
+- An example is provided of a properly-formatted input file.
+2. Parse the data to create Customer objects and put them in a List (e.g., an ArrayList). 
+3. Update the GUI display.
+- Display a "success" message in statusText that shows how many Customer objects were created.
+- Display the total number of orders across all customers in the resultText.
+- Note: Both of these Text objects are initially set to be invisible. You'll need to update this. 
+5. Disable the button so the user cannot upload another file.
+- Note: You should get the program working first for normal execution before moving on to Part 2.
+
+Part 2: Error Execution Flow 
+
+- Your program should also respond to some kinds of improperly-formatted input files, described below. 
+- You must use exception handling for these situations.
+
+For each of the following three situations:
+
+- Update the statusText to display an error message 
+- Allow the user to continue to try to upload a data file.
+- There are two bad data input files provided that you can use to test Situation 1 and 2.
+- Use a try/catch or try/catch/finally to handle all exceptions.
+- Do not have your program crash or throw an exception of any type.
+- If you throw an exception inside a method, it must be caught and handled somewhere in the program.
+
+Situation 1: The number of orders in the data file is not integer data.
+- Use an Exception type from the Java standard library to respond to this situation.
+- Show the non-integer data in the statusText message.
+
+Situation 2: The customer ID contains an invalid character.
+- For our purposes, "@" is an invalid character.
+- You can also consider other characters invalid, too.
+- Show the invalid ID in the statusText message.
+- For this situation, create and use your own exception class.
+
+Situation 3: Some IOException occurs.
+- Use an Exception type from the Java standard library to respond to this situation.
