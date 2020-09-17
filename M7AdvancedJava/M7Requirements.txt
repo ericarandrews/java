@@ -1,0 +1,40 @@
+M7 for Advanced Java
+
+For M7, the requirements are to...
+
+Description: 
+
+- Use a "big data" set with collections classes.
+
+Requirements:
+
+Before You Begin
+1. Find and pare down or clean a big data set that interests you.
+- Here are some example websites to find data sets: 
+- U.S. Government Data (https://www.data.gov/) 
+- U.S. Census Fact Finder (https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml) 
+- UNICEF Data (https://data.unicef.org/) 
+- San Francisco Data (https://data.sfgov.org/) 
+- New York City Data (https://opendata.cityofnewyork.us/data/) 
+- Pew Research Center (http://www.pewinternet.org/datasets/) (you have to create an account to access)
+2. "Clean" up the data to keep only the variables of interest. Delete any records that aren't properly formed.
+3. Think of two interesting questions/queries to ask about this data set.
+
+Writing the Code
+Your classes must compile and meet the following requirements:
+1. Write a class to represent your data.
+- The class can be a simplified version of the data. You do not need to include all variables in the dataset.
+- The class should have: 
+- instance data variables
+- constructor 
+- getters/setters 
+- toString 
+- equals method 
+- compareTo method (the class should implement Comparable<MyClass>)
+2. In a separate class, read in your data file and create objects of your class.
+3. Create at least one list and at least one map of your data.
+4. Answer at least two interesting queries/questions about your data.
+- Examples: What is the business owner with the most businesses? How many out-of-state businesses are on the list?
+- The queries can use either the list or the map.
+- Consider how you can build a map to efficiently answer your query.
+- Note: Avoid using Java 8 streams to answer your queries.
