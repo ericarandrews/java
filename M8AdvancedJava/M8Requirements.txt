@@ -1,0 +1,45 @@
+M8 for Advanced Java
+
+For M8, the requirements are to...
+
+Description: 
+
+- Write a generic class to represent a random drawing of an item out of a box that holds a group of items.
+- The class can be used to simulate a random drawing of different kinds of objects.
+- Example: a drawing of Strings - people's names who entered a contest.
+- Example: a drawing of Integers - ticket numbers from a raffle.
+- Example: a drawing of Employee objects - one lucky worker wins an extra vacation day.
+
+Requirements:
+
+Part 1: Write the Generic RandomBox Class
+- The class should allow the user to specify whether or not the box should allow duplicates objects. You can do this by adding a boolean variable to the constructor.
+- You can decide on the internal data structure (e.g., an array, a list, set, etc.).
+- You can decide on the output format for displayEntries and toString. For example, you might have displayEntries print all entries to the console. You might have toString create a text representation containing only the size (since the number of entries could be very large).
+- You can add additional methods.
+
+Requirements:
+
+- Write the full class and class header using generics.
+
+Include the following methods:
+- One or more constructor 
+- void addEntry(T); Make sure this method accounts for whether or not there are duplicates. 
+- T drawWinner(boolean). The boolean indicates whether the winner should be removed from the box or just drawn but left in the box.
+- void displayEntries() 
+- String toString() 
+- int size()
+
+- Note: Reduce repeated or duplicated code and write helper methods when it will help clarify the code or reduce repeated code.
+
+Part 2: Add a Generic Method to the Driver Program
+
+- Write a static generic method in the driver program to pick multiple unique winners from a RandomBox that does allow duplicates. 
+- The winners should be removed from the box.
+- The method should declare a generic type.
+- The return type is a List that contains that generic type (List<T>) 
+- The parameters are: a RandomBox<T> object and the number of winners.
+- The method should not alter the RandomBox passed in as a parameter other than by removing that number of winners.
+- The method should take some logical action if there aren't enough entries in the box to draw the specified number of unique winners.
+- Only invoke the required RandomBox methods that you wrote in Part 1.
+- Note: This method should be efficient, meaning O(n).
