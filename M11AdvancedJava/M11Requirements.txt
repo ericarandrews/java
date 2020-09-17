@@ -1,0 +1,29 @@
+M11 for Advanced Java
+
+For M11, the requirements are to...
+
+Description: 
+
+- Use streams to answer questions about a "big data" set.
+
+Requirements:
+
+Dataset and the Product Class
+- The dataset describes hazardous (or potentially hazardous) chemicals found in cosmetics and other personal products in California. 
+- The data comes from this website (https://data.ca.gov/dataset/chemicals-in-cosmetics). 
+- The dataset has 81,794 rows.
+
+The Product.java class describes a Product.
+- Products have a String name, company, brand, and colorScentFlavor.
+- Products also have a category, based on the provided Category enum.
+- The combination of these five pieces of information uniquely define a product. The equals method and hashCode method use only these five variables.
+- Products also have a list of chemicals (represented as Strings) in that product.
+
+Begin by looking over the dataset, the Product class, and the Category enum.
+
+Requirements
+
+- Complete the ProductBigDataQuestions file. This file has 7 questions about the "big dataset." 
+- Answer these questions using streams. 
+- Write compact (and elegant) solutions, using a single, pipelined statement to answer each question.
+- For debugging, it is recommended to create a smaller datafile with a subset of the data, (perhaps 20-50 rows). This will allow you to hand-check the data in the csv file against your results, which should help you track down errors.
