@@ -1,0 +1,47 @@
+M13 for Advanced Java
+
+For M13, the requirements are to...
+
+Description: 
+
+- Write your own annotation and use that annotation in a method that uses reflection.
+
+Requirements:
+
+Part A: The Annotation Class
+1. Write an annotation called ProperLength that describes the required length of a String value. Here are the requirements for the annotation:
+- This annotation has two elements: min length and max length.
+- The default min is 1 and the default max is 255.
+- The annotation is meant for fields (instance data variables) only.
+2. Apply this annotation to some or all the fields of the provided Address class, with these specifications:
+- street must not be empty and can be a max of 255 
+- street2 has no restrictions (it can be empty and there is no max) 
+- city must not be empty and can be a max of 40 
+- state must be exactly 2 characters long 
+- zip must be exactly 5 characters long
+
+Part B: Reflection Method
+3. In the Address class, implement the validateLengths() method.
+- This method uses reflection to look over all fields in the Address class and validate them using the annotation.
+- If a field has invalid length, an exception is thrown.
+- Below is suggested pseudocode. However, it is not required to follow the pseudocode.
+Note: Reduce duplicated code.
+
+
+Suggested Pseudocode
+
+pseudocode for validateLengths() method 
+
+get all fields in the current class
+     NOTE: use the method myClass.getDeclaredFields() to access private fields; getFields() only accesses public fields
+
+for each field, check if the ProperLength annotation is present for that field
+
+if it is, get the annotation object and its min and max values 
+
+get the field value
+      NOTE: the method myField.get(this) can be used to obtain the value of a field for a particular object; this method returns an Object, so you'll need to cast it 
+
+compare the field value to the annotation min and max requirements
+
+if the field value is invalid, throw an exception with some sort of descriptive message
