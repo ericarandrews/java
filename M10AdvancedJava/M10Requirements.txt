@@ -1,0 +1,53 @@
+M10 for Advanced Java
+
+For M10, the requirements are to...
+
+Description: 
+
+- Complete a JavaFX GUI that allows a user to draw a line and then display information about that line.
+
+Requirements:
+
+Before You Begin
+* Review the provided file: 
+- LineInfoGUI: the main JavaFX program.
+- The program allows the user to click two points and create a line.
+- There are three buttons to allow the user to request information about the line: 
+1. The distance between the starting ending points of the line.
+2. The midpoint of the line.
+3. Whether or not the line is horizontal or vertical.
+- When you run this program as provided, you should be able to create lines.
+- The buttons have no functionality. This is what you will add.
+
+LineInfoDisplayer: a functional interface with an enum and static factory method.
+* The functional interface has one method: 
+- getInfo()
+- Classes that implement this interface implement the getInfo method.
+- The getInfo method takes in a line and returns a String of information about that line.
+- In a pre-Java 8 setup, you could imagine writing three classes to implement this interface: DistanceDisplayer, MidpointDisplayer, VertHorzDisplayer.
+- The interface declares an enum to describe the three types of line information in this program.
+- The interface contains a static factory method to create an object of type LineInfoDisplayer based on the type passed in as a parameter.
+
+Requirements
+
+1. Review the files provided.
+2. Complete the LineInfoDisplayer interface.
+- Implement the factory method to return three different possible LineInfoDisplayer objects based on the requested type passed in as a parameter.
+- Requirement: Use lambdas.
+- Suggestion: Use a switch statement.
+3. Complete the LineInfoGUI class.
+- Write code to set the action of the three buttons.
+- For the action, assign a value to the lineInfoDisplayer variable using the static factory method you wrote in LineInfoDisplayer.
+- Update the appropriate Text variable to display the information.
+- Requirement: Use lambdas.
+4. Add a time stamp to the LineInfoGUI class.
+- When the user completes a line, display the time in some human-friendly format. Update the variable timeText to display the information.
+- It is not listed where this update should occur - that is part of what you should figure out.
+- Note: Reduce duplicated code.
+- Note: You must use lambdas.
+
+Extra Credit
+
+- Add a fourth type of line information.
+- You can decide what it should be.
+- Update both the GUI and the interface to support this fourth information type.
